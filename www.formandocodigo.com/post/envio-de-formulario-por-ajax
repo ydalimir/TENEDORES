@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Envio de formulario por Ajax | Formando Código</title>
+  <link href="http://www.formandocodigo.com/css/prism.css" type="text/css" rel="stylesheet"/>
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.1.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.1.0/jssocials-theme-flat.css" />
+  
+  <meta property='og:title' content='Envio de formulario por Ajax | Formando Código' />
+  <meta property='og:site_name' content='Formando Código'/>
+  <meta property='og:url' content='http://www.formandocodigo.com/post/envio-de-formulario-por-ajax' />
+  <meta property='og:description' content='Hoy aprenderemos a realizar el envio de un formulario por ajax, para el backend se puede realizar con casi cualquier lenguaje web y para el frontend usaremos'/>
+  <meta property='og:image' content='https://admin.formandocodigo.com/imagenes/blog/portadas/cover-post-envio-de-formulario-por-ajax-full.jpg'/>
+  <!-- Meta -->
+
+  <meta name="description" content="Hoy aprenderemos a realizar el envio de un formulario por ajax, para el backend se puede realizar con casi cualquier lenguaje web y para el fronten..."/>
+  <meta name="keywords" content="php,ajax,jquery"/>
+  <!-- Meta Twitter -->
+
+  <meta name="twitter:title" content="Envio de formulario por Ajax | Formando Código"/>
+  <meta name="twitter:description" content="Hoy aprenderemos a realizar el envio de un formulario por ajax, para el backend se puede realizar..."/>
+  <meta name="twitter:image" content="https://admin.formandocodigo.com/imagenes/blog/portadas/cover-post-envio-de-formulario-por-ajax-full.jpg"/>
+  <!-- Meta Google+ -->
+  <meta itemprop="name" content="Envio de formulario por Ajax | Formando Código"/>
+  <meta itemprop="description" content="Hoy aprenderemos a realizar el envio de un formulario por ajax, para el backend se puede realizar con casi cualquier lenguaje web y para el fronten..."/>
+  <meta itemprop="image" content="https://admin.formandocodigo.com/imagenes/blog/portadas/cover-post-envio-de-formulario-por-ajax-full.jpg"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS  -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="http://www.formandocodigo.com/css/materialize.min.css?v=1.1" type="text/css" rel="stylesheet" media="screen"/>
+<link href="/MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css?v=1.1" rel="stylesheet">
+    <!-- Font Awesome -->
+<link href="/MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!-- Simple Line Icons -->
+<link href="/MegaNavbar/assets/plugins/simple-line-icons/simple-line-icons.css" rel="stylesheet">
+<!-- MegaNavbar-->
+<link rel="stylesheet" type="text/css" href="/MegaNavbar/assets/css/MegaNavbar.min.css?v=1.2">
+<link rel="stylesheet" type="text/css" href="/MegaNavbar/assets/css/skins/navbar-inverse.css?v=1.1">
+<link rel="stylesheet" type="text/css" href="/MegaNavbar/assets/css/animation/animation.css">
+<link href="http://www.formandocodigo.com/css/style.css?v=1.1" type="text/css" rel="stylesheet" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<!--Icono-->
+<link rel="stylesheet" href="/iconos/celeste/font/flaticon.css" rel="stylesheet">
+<link href="http://www.formandocodigo.com/css/owl.carousel.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/estilo.css?v=1.6"/>
+<link rel="stylesheet" href="http://www.formandocodigo.com/css/nprogress.css"/>
+<link rel="stylesheet" href="http://www.formandocodigo.com/css/hover.css"/>
+<link rel="stylesheet" href="http://www.formandocodigo.com/css/style12.min.css"/>
+<link rel="stylesheet" href="/plugin/preload/css/preloader.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" href="/plugin/whatsapp/floating-wpp.min.css?v=4">
+<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+<link rel='canonical' href='https://formandocodigo.com/' />
+<meta property='og:type' content='website' />
+<meta property='og:locale' content='es_ES' />
+<meta property='og:locale:alternate' content='fr_FR' />
+<meta property='og:locale:alternate' content='it_IT' />
+<meta name="author" content="formandocodigo.com"/>
+<meta name="robots" content="all, index, follow"/>
+<meta name="subject" content="Aprende programando con nuestros cursos prácticos"/>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@formandocodigo" />
+<meta name="twitter:creator" content="@formandocodigo" />
+<meta name="twitter:url" content="https://twitter.com/formandocodigo"/>
+<meta property='article:author' content='https://www.facebook.com/FormandoCodigo' />
+<meta property='article:publisher' content='https://www.facebook.com/FormandoCodigo' />
+<meta property="fb:app_id" content="968423973206792"/>
+<meta name="google-site-verification" content="sQMVDrOfy_j-NXCXhR1JRZDrig8jFVTmNBdXn7EsRj8" />
+<style>
+    .savemoney{
+        
+        opacity: 0.7;
+        text-decoration: line-through;
+    }
+</style>
+
+  <link rel="stylesheet" href="https://admin.formandocodigo.com/public/admin/robust-assets/css/plugins/editors/quill/monokai-sublime.min.css">
+  <link rel="stylesheet" type="text/css" href="/frontend/css/custom/quill.snow.custom.css">
+</head>
+<body>
+  <main>
+    <!--MENU-->
+<div class="navbar " role="navigation" id="miNav">
+  <div class="container">
+    <!-- for full width layout or use class="container" for boxed layout -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MegaNavbar">
+        <span class="sr-only">Expandir menu</span>
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand-white img-logo" href="/" class="brand-logo"><img src="http://www.formandocodigo.com/img/formando-codigo-bn.svg" style="width: 210px;" alt="Formando Código"/></a>
+      <a class="navbar-brand brand-color img-logo hidden" href="/" class="brand-logo"><img src="http://www.formandocodigo.com/img/formando-codigo.svg" style="width: 210px;" alt="Formando Código"/></a>
+      <a href="#" data-activates="slide-out" class="button-collapse waves-effect waves-light btn-menu-responsive"><i class="flaticon-menu-1"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="MegaNavbar">
+      <ul class="nav navbar-nav navbar-left">
+        <!-- Left side navigation-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- Right side navigation-->
+        <!-- account -->
+        <a href="/cursos" class="navbar-link navbar-left hidden-md hidden-sm"><span class="">Cursos <span style="color:red;"><i class="fa fa-percent"></i></span></span></a>
+                <a href="/suscripcion/planes" class="navbar-link navbar-left"><span class="">Suscripción <span style="color:red;"><i class="fa fa-percent"></i></span></span> </a>
+                <a href="/gratis" class="navbar-link navbar-left hidden-md hidden-sm"><span class="">Gratis</span></a>
+        <li class="dropdown-recursos">
+          <a data-toggle="dropdown" href="javascript:;" id="dropdownMenu3" class="dropdown-toggle hidden-lg" aria-expanded="true"><i class="flaticon-info"></i>&nbsp;<span> Contenidos </span><span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+            <li><a href="/cursos">Cursos</a></li>
+            <li><a href="/tutoriales">Tutoriales y videos gratuitos</a></li>
+            <li><a href="/blog">Blog y novedades</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-soporte">
+          <a data-toggle="dropdown" href="javascript:;" id="dropdownMenu1" class="dropdown-toggle hidden-sm" aria-expanded="true"><i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;<span> Más </span><span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="/suscripcion/formasdepago">Formas de pago</a></li>
+            <li><a href="/faq">Preguntas frecuentes</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/deseos">Deseos</a></li>
+            
+          </ul>
+        </li>
+                <li class="divider"></li>
+        <a href="/ingresar-a-formando-codigo" class="navbar-link navbar-left"><span class="hidden-sm hidden-md">Iniciar sesión</span><span class="hidden-lg">Login</span></a>
+        <a href="/registrarme-en-formando-codigo" class="navbar-link hidden-sm link-call navbar-left"><span>Registrarme</span></a>
+              </ul>
+    </div>
+  </div>
+</div>
+<ul id="slide-out" class="side-nav collapsible collapsible-accordion">
+    <li><a class="waves-effect bold" href="/ingresar-a-formando-codigo">Iniciar Sesión</a></li>
+  <li><a class="waves-effect bold" href="/registrarme-en-formando-codigo">Registrate</a></li>
+            <li><a href="/suscripcion/planes">Precios</a></li>
+          <li><a class="waves-effect" href="/cursos">Cursos</a></li>
+  <li><a class="waves-effect" href="/tutoriales">Tutoriales</a></li>
+  <li><a class="waves-effect" href="/blog">Blog</a></li>
+  <li>
+    <a class="collapsible-header waves-effect waves-light">Más <i class="flecha-right fa fa-caret-down"></i></a>
+    <div class="collapsible-body">
+      <ul>
+        <li><a class="waves-effect" href="/suscripcion/formasdepago">Formas de pago</a></li>
+        <li><a class="waves-effect" href="/faq">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+  </li>
+  </ul>
+<!--MENU-->
+
+  
+    <div class="container-fluid">
+    <div class="row">
+        <div id="test1" class="col s12 no-padding">
+            <nav class="grey lighten-3 black-text hide-on-small-only" style="margin-top: 62px;">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <div class="col s12">
+                            <a href="#!" class="breadcrumb">Cursania</a>
+                            <a href="#!" class="breadcrumb">Blog</a>
+                            <a href="#!" class="breadcrumb">Envio de formulario por Ajax</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="cursoItem curso-mod-400">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l8 s12 m7">
+                            <div class="seccion1">
+                                <div class="titulo" style="text-align: left;">
+                                    <h2>Envio de formulario por Ajax</h2>
+                                    <p class="truncate">Descubre como enviar datos por ajax de manera sencilla y segura</p>
+                                </div>
+                                <div class="video-container">
+                                    <img class="responsive-img" src="https://admin.formandocodigo.com/imagenes/blog/portadas/cover-post-envio-de-formulario-por-ajax-full.jpg" alt="Envio de formulario por Ajax">
+                                </div>
+                                <div class="ql-snow">
+                                    <div class="ql-editor">
+                                        <p>Hoy aprenderemos a realizar el envio de un formulario por ajax, para el backend se puede realizar con casi cualquier lenguaje web y para el frontend usaremos jquery ya que nos ayudará con sus métodos prácticos para ajax.</p><p><br></p><p><span class="ql-size-large" style="color: rgb(0, 0, 0);">1. Maquetar formulario</span></p><p>Para comenzar a realizar este pequeño tutorial necesitamos tener un archivo *.html creado, estaremos trabajando con html5 en todo momento así que es importante resaltar que algunas propiedades en los controles de formulario son netamente funcionales en HTML5.</p><p><br></p><pre class="ql-syntax" spellcheck="false"><span class="hljs-tag"><<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"es"</span>></span>
+<span class="hljs-tag"><<span class="hljs-name">head</span>></span>
+    <span class="hljs-tag"><<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>></span>
+    <span class="hljs-tag"><<span class="hljs-name">title</span>></span>Enviar formulario con ajaxtitle>
+<span class="hljs-tag"><<span class="hljs-name">head</span>></span>
+<span class="hljs-tag"><<span class="hljs-name">body</span>></span>
+    <span class="hljs-tag"><<span class="hljs-name">form</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"formulario"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"recibir.php"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span>></span>
+        <span class="hljs-tag"><<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Escribe tu nombre"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"nombre"</span> <span class="hljs-attr">required</span> <span class="hljs-attr">autofocus</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Ingresa tu nombre porfavor"</span>></span>
+        <span class="hljs-tag"><<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Ingresa tu edad"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"edad"</span> <span class="hljs-attr">required</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Ingresa tu edad porfavor"</span>></span>
+        <span class="hljs-tag"><<span class="hljs-name">br</span>><<span class="hljs-name">br</span>></span>
+        <span class="hljs-tag"><<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"btnEnviar"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"btnEnviar"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Enviar formulario"</span>></span>
+    form>
+    <span class="hljs-tag"><<span class="hljs-name">hr</span>></span>
+    <span class="hljs-tag"><<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"respuesta"</span>></span>
+
+    <span class="hljs-tag"><<span class="hljs-name">p</span>></span>
+    <span class="hljs-tag"><<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://code.jquery.com/jquery-2.2.2.min.js"</span>></span>script>
+    <span class="hljs-tag"><<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/enviar.js"</span>></span>script>
+<span class="hljs-tag"><<span class="hljs-name">body</span>></span>
+<html>
+</pre><p><br></p><p>En el archivo html vemos que tenemos un formulario con dos campos (Nombre, Edad) Los cuales serán enviados por método POST.</p><p><span class="ql-size-large" style="color: rgb(0, 0, 0);">2. Archivo *.js</span></p><p>Para realizar el envío por medio de AJAX en este caso vamos a hacer uso de la librería Jquery, para lo cual insertamos el script haciendo referencia al jquery por encima de nuestro código o archivo en donde hacemos el ajax; Esto es importante de lo contrario vamos a tener problemas y al final no va a funcionar nuestro código.</p><p><br></p><pre class="ql-syntax" spellcheck="false"><span class="hljs-tag"><<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://code.jquery.com/jquery-2.2.2.min.js"</span>></span>script>
+<span class="hljs-tag"><<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/enviar.js"</span>></span>script>
+</pre><p><br></p><p>Ahora vamos a ver nuestro código para realizar el envío:</p><p><br></p><pre class="ql-syntax" spellcheck="false">$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span> () </span>{
+    $(<span class="hljs-string">"#formulario"</span>).bind(<span class="hljs-string">"submit"</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>()</span>{
+        <span class="hljs-comment">// Capturamnos el boton de envío</span>
+        <span class="hljs-keyword">var</span> btnEnviar = $(<span class="hljs-string">"#btnEnviar"</span>);
+        $.ajax({
+            <span class="hljs-attr">type</span>: $(<span class="hljs-keyword">this</span>).attr(<span class="hljs-string">"method"</span>),
+            <span class="hljs-attr">url</span>: $(<span class="hljs-keyword">this</span>).attr(<span class="hljs-string">"action"</span>),
+            <span class="hljs-attr">data</span>:$(<span class="hljs-keyword">this</span>).serialize(),
+            <span class="hljs-attr">beforeSend</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>()</span>{
+                <span class="hljs-comment">/*
+                * Esta función se ejecuta durante el envió de la petición al
+                * servidor.
+                * */</span>
+                <span class="hljs-comment">// btnEnviar.text("Enviando"); Para button </span>
+                btnEnviar.val(<span class="hljs-string">"Enviando"</span>); <span class="hljs-comment">// Para input de tipo button</span>
+                btnEnviar.attr(<span class="hljs-string">"disabled"</span>,<span class="hljs-string">"disabled"</span>);
+            },
+            <span class="hljs-attr">complete</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>)</span>{
+                <span class="hljs-comment">/*
+                * Se ejecuta al termino de la petición
+                * */</span>
+                btnEnviar.val(<span class="hljs-string">"Enviar formulario"</span>);
+                btnEnviar.removeAttr(<span class="hljs-string">"disabled"</span>);
+            },
+            <span class="hljs-attr">success</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>)</span>{
+                <span class="hljs-comment">/*
+                * Se ejecuta cuando termina la petición y esta ha sido
+                * correcta
+                * */</span>
+                $(<span class="hljs-string">".respuesta"</span>).html(data);
+            },
+            <span class="hljs-attr">error</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>)</span>{
+                <span class="hljs-comment">/*
+                * Se ejecuta si la peticón ha sido erronea
+                * */</span>
+                alert(<span class="hljs-string">"Problemas al tratar de enviar el formulario"</span>);
+            }
+        });
+        <span class="hljs-comment">// Nos permite cancelar el envio del formulario</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    });
+});
+</pre><p><br></p><p>El método <code>bind()</code> se utiliza para conectar un controlador de eventos directamente a los elementos, es decir nosotros podemos invocar a un elemento <code>$(".boton")</code> y por medio del método <code>bind()</code> ejecutar uno o mas eventos sobre sí.</p><p>También dentro de este método <code>bind()</code> usamos un <code>return false</code> , esto sirve para cancelar el envió directo del formulario hacia el archivo php, dado que el ajax se ejecuta sobre la misma pantalla sin refrescarla.</p><p><span class="ql-size-large">3. El archivo *.php</span></p><p>Para poder hacer el envío del formulario y la lectura de los campos estamos haciendo uso de php, Lenguaje de programación de lado servidor.</p><p><br></p><pre class="ql-syntax" spellcheck="false"><span class="hljs-built_in">echo</span> <span class="hljs-string">"Hola "</span>.<span class="hljs-variable">$_REQUEST</span>[<span class="hljs-string">"nombre"</span>].<span class="hljs-string">", Tienes "</span>.<span class="hljs-variable">$_REQUEST</span>[<span class="hljs-string">"edad"</span>].<span class="hljs-string">" Años."</span>;
+</pre><p><br></p><p>Al final debemos encontrar un resultado como este cuando hagamos el envió del formulario.</p><p><br></p><p><img src="https://admin.formandocodigo.com/imagenes/blog/imagenes/cursania-imagen-31052017111649.jpg"></p>
+                                    </div>
+                                </div>
+                                <hr>
+                            <div class="row" id="comentarios">
+                              <div class="col l6 m6 hide-on-med-and-down">
+                                  <br>
+                                  <a class="waves-effect waves-light btn light-blue darken-2 botom-precio modal-trigger" data-modal="true" data-href="http://www.formandocodigo.com/comentario/formulario/post/2/envio-de-formulario-por-ajax" href="#mainModal">Comentar <i class="mdi-action-question-answer right"></i></a>
+                              </div>
+                              <div class="col l6 m6 hide-on-med-and-down right-align" style="position: relative; margin-top: 12px;">
+                                  <span class="compartir">Compartir:</span>
+                                  <ul class="social">
+                                      <li><a href="" class="ease-all twitter"><i class="mdi mdi-twitter"></i></a></li>
+                                      <li><a href="" class="ease-all facebook"><i class="mdi mdi-facebook"></i></a></li>
+                                      <li><a href="" class="ease-all youtube"><i class="mdi mdi-google-plus"></i></a></li>
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="comentarios p-15">
+                          <div class="card-panel">
+      <div class="items center">
+          <h3>0 Comentarios</h3>
+          <p>Este curso no cuenta con comentarios aún, puedes ser el primero en dejar tu apreción, duda o consulta.</p>
+          <a class="waves-effect waves-light btn  light-blue darken-2 modal-trigger" id="btn_comentario" data-modal="true" data-href="http://www.formandocodigo.com/comentario/formulario/post/2/envio-de-formulario-por-ajax" href="#mainModal"><i class="mdi-action-question-answer right"></i>Comentar ahora</a>
+      </div>
+    </div>
+        
+
+
+                        </div>
+                    </div>
+                    <div class="col l4 s12 m5">
+                        <div class="seccion2">
+                                <ul class="categoria col l12 s12 m12">
+                                    <li>
+                                        <i class="flaticon-diamond icono"></i>
+                                        <span class="letra">Fecha </span>
+                                        <a href="">01/06</a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-diamond icono"></i>
+                                        <span class="letra">Categoría </span>
+                                        <a href="">Programación Web</a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-diamond icono"></i>
+                                        <span class="letra">Autor </span>
+                                        <a href="">Cesar</a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-diamond icono"></i>
+                                        <span class="letra">Comentarios </span>
+                                        <a href=""> 21</a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-diamond icono"></i>
+                                        <span class="letra">Recursos</span>
+                                        <a href="">2</a>
+                                    </li>
+                                </ul>
+                                <div class="tutor col l12 s12 m12" style="margin-top: 15px">
+                                  <div class="titulo-border">
+                                    <h3>Tutor</h3>
+                                  </div>
+                                  <div class="row" style="margin-bottom: 0px">
+                                    <div class="col l4 m4 s4">
+                                      <img src="https://admin.formandocodigo.com/imagenes/profesor/foto/foto-profesor-28022018141923-cesar-mejia-100.png" class="circle responsive-img" alt="Tutor" style="min-width: 100%">
+                                    </div>
+                                    <div class="col l8 m8 s8">
+                                      <h5>Cesar Mejia</h5>
+                                      <span>Desarrollador de software</span>
+                                      <!--<a class="waves-effect waves-light btn btn-transparente">Contactar <i class="fa fa-envelope"></i></a>-->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="relacionados col l12 s12">
+                                    <div class="titulo-border">
+                                        <h3>Post Relacionados</h3>
+                                    </div>
+                                                                            <div class="relacionados-content">
+                                            <a href="http://www.formandocodigo.com/post/cargar-imagenes-con-php-y-ajax">
+                                            <div class="imagen" style="
+                                            background-image: url(https://admin.formandocodigo.com/imagenes/blog/portadas/cover-post-cargar-imagenes-con-php-y-ajax-100.jpg);
+                                            "></div></a>
+                                            <div class="descrip">
+                                                <a href="http://www.formandocodigo.com/post/cargar-imagenes-con-php-y-ajax"><h4>Cargar imágenes con PHP y Ajax</h4></a>
+                                                <p >Te enseñamos la mejor forma de cargar imagenes con ajax y php</p>
+                                            </div>
+                                        </div>
+                                        <br>
+                                                                            <div class="relacionados-content">
+                                            <a href="http://www.formandocodigo.com/post/conexion-a-mysql-con-pdo-en-php">
+                                            <div class="imagen" style="
+                                            background-image: url(https://admin.formandocodigo.com/imagenes/blog/portadas/cover-post-conexion-a-mysql-con-pdo-en-php-100.jpg);
+                                            "></div></a>
+                                            <div class="descrip">
+                                                <a href="http://www.formandocodigo.com/post/conexion-a-mysql-con-pdo-en-php"><h4>Conexión a MySQL con PDO en PHP</h4></a>
+                                                <p >Aprende a conectarte a mysql con PDO en PHP - 2017</p>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    
+                                    <div class="calificacion">
+                                        <div class="titulo-border">
+                                            <h3>Calificación</h3>
+                                        </div>
+                                        <div class="puntaje">
+                                            <h3 class="puntaje-numero">4.5</h3>
+                                            <div class="puntaje-estrellitas">
+                                              <i class="mdi-star mdi" aria-hidden="true"></i>
+                                              <i class="mdi-star mdi" aria-hidden="true"></i>
+                                              <i class="mdi-star mdi" aria-hidden="true"></i>
+                                              <i class="mdi-star mdi" aria-hidden="true"></i>
+                                              <i class="mdi-star-outline mdi" aria-hidden="true"></i>
+                                                <span>5 Comentarios</span>
+                                            </div>
+                                        </div>
+                                        <a class="waves-effect waves-light light-blue darken-2 btn botom-precio" href="#"><i class="mdi-action-question-answer right"></i>Comentar ahora</a>
+                                    </div>
+                                </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+</div>
+</div>
+   <div class="floating-wpp"></div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col l3 s12 m6 center" id="Table_of_Contents">
+                <div class="block-title">
+                    Formando Código
+                </div>
+                <p class="black-text text-lighten-4" style="font-size: 13px;line-height: 20px;">Es una página pensada en todas aquellas personas autodidactas que quieren aprender o aumentar sus conocimientos en las distintas tecnologías de programación escritorio, Web y Móvil.</p>
+                <div
+                class="fb-like"
+                data-share="true"
+                data-width="200"
+                data-show-faces="true">
+            </div>
+            <br><br>
+        </div>
+        <div class="col l3 s12 m6 center">
+            <div class="block-title">
+                PÁGINAS ÚTILES
+            </div>
+            <ul class="enlaces">
+                <li><a href="/terminos-y-condiciones">TERMINOS Y CONDICIONES</a></li>
+                <li><a href="/deseos">DESEOS</a></li>
+                <li><a href="/suscripcion/formasdepago">FORMAS DE PAGO</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <!--<li><a class="" href="http://www.formandocodigo.com/contacto">CONTACTO</a></li>-->
+            </ul>
+        </div>
+        <div class="col l3 s12 m6 center">
+            <div class="block-title">
+                Datos de Contacto
+            </div>
+            <div class="block-content">
+               <div class="contact-item" style="margin-top: -2px; box-shadow:none!important; background:none;"><img src="/img/iconos/email.svg" alt="correo formando código"><a href="mailto:info@formandocodigo.com" class="text-contact-item">info@formandocodigo.com</a></div>
+               <div class="contact-item" style="box-shadow:none!important; background:none;"><img src="/img/iconos/phone-call.svg" alt="correo formando código"><a href="tel:+51964078717" class="text-contact-item">(+51) 964 078 717</a></div>
+           </div>
+           <ul class="redes-sociales" style="margin-top: -15px;">
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Facebook" id="facebook" href="https://www.facebook.com/FormandoCodigo" target="_blank"></a></li>
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Twitter" id="twitter" href="https://twitter.com/formandocodigo" target="_blank"></a></li>
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Google-plus" id="google-plus" href="https://plus.google.com/108666760835668268134" target="_blank"></a></li>
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Youtube" id="youtube" href="http://youtube.com/FormandoCodigo" target="_blank"></a></li>
+        </ul>
+    </div>
+    <div class="col l3 s12 m6 center">
+        <div class="block-title">
+            Formas de Pago
+        </div>
+        <div class="pagos-iconos" style="margin-top: 14px;">
+            <img src="/img/formas-de-pago.svg" alt="Formas de pago FormandoCodigo">
+        </div>
+    </div>
+</div>
+</div>
+<div class="barra-footer">
+    <div class="container">
+        <div class="col m12 l12">
+            <div class="row">
+                <div class="col l6 s12 text-left">
+                    <h6 class="dacdevs"><a href="http://facebook.com/dacdevs"><img src="/img/iconos/dacdevs.svg" alt="Dac Developers" class="img-dacdevs"><span>Dac Developers - Desarrollo web</span></a></h6>
+                </div>
+                <div class="col l6 s12 text-right">
+                    <h6 class="copy">2015 - 2020 | <strong>©FormandoCódigo</strong> <span class="derechos">Todos los derechos reservados</span></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mregister" class="modal">
+    <div class="modal-content">
+      <div class="contenido">
+        <div class="row">
+        <div class="col l4 s12 m6">
+           <div class="row">
+              <div class="s12 center input-field">
+                  <span class="social-grey-text">
+                      Crea tu cuenta con: 
+                  </span>
+              </div>
+              <div class="col s12 input-field center">
+                  <a href="/facebook/authorize" class="waves-effect btn-social waves-light btn blue darken-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook">
+                      <i class="fa fa-facebook">
+                      </i>
+                  </a>
+                <br>
+                  
+                  <a href="/google/authorize" class="waves-effect btn-social red darken-4 waves-light btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Google+">
+                      <i class="fa fa-google-plus">
+                      </i>
+                  </a>
+              </div>
+          </div>
+        </div>
+        <div class="col l8 s12 m6">
+          <div class="row">
+            <div class="s12 center input-field">
+              <span class="social-grey-text">
+                  O registrate con tu email
+              </span>
+            </div>
+          </div>
+          <div class="row">
+              <form class="col s12" role="form" method="POST" data-ng-submit="enviarRegistro()">
+                  <input type="hidden" name="_token" value="Sw8q8egdbk21suw1cEIXEponYcapZ0ZiGM6i2OHH">
+                  <div class="row">
+                      <div class="input-field col s12 m12 l6 ">
+                          <input data-ng-model="registro.nombre" id="name" required min="3" title="Ingrese su Nombre" name="name" type="text" value="" class="validate "/>
+                          <label for="name">
+                              Nombres
+                          </label>
+                          <span class="help-block" data-ng-if="errores.nombre.length">
+                              <strong><% errores.nombre[0] %></strong>
+                          </span>
+                      </div>
+                      <div class="input-field col s12 m12 l6">
+                          <input id="emailregistro" data-ng-model="registro.email" type="email" required title="Ingrese su dirección de correo electronico" name="email" class="validate " value=""/>
+                          <label for="emailregistro">
+                              Email
+                          </label>
+                          <span class="help-block" data-ng-if="errores.email.length">
+                              <strong><% errores.email[0] %></strong>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s12 m12 l6">
+                          <input data-ng-model="registro.password" id="passwordregistro" min="6" maxlength="30" required title="Ingrese una contraseña segura" type="password" name="password" class="validate "/>
+                          <label for="passwordregistro">
+                              Contraseña
+                          </label>
+                          <span class="help-block" data-ng-if="errores.password.length">
+                              <strong><% errores.password[0] %></strong>
+                          </span>
+                      </div>
+                      <div class="input-field col s12 m12 l6">
+                          <input data-ng-model="registro.password_confirmation" id="password_confirmation" required title="Ingrese su contraseña nuevamente" name="password_confirmation" type="password" class="validate "/>
+                          <label for="password_confirmation">
+                              Repetir contraseña
+                          </label>
+                          <span class="help-block" data-ng-if="errores.password_confirmation.length">
+                              <strong><% errores.password_confirmation[0] %></strong>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col s12 input-field left">
+                          <input ng-model="teracepto" type="checkbox" class="blue" id="test5" />
+                          <label for="test5">
+                              He leído y acepto los <a class="/terminos-y-condiciones">términos y condiciones</a> de Formando Código.
+                          </label>
+                      </div>
+                      <div class="col s12 input-field center">
+                          <br>
+                          <br>
+                      </div>
+                      <div class="col s12 input-field center">
+                          <button type="submit" data-gn-model="button" ng-disabled="enviabtn" class="btn waves-effect waves-light light-blue">
+                              <i data-ng-show="!enviando" class="fa fa-send right">
+                              </i>
+                              <i data-ng-show="enviando" class="fa fa-circle-o-notch fa-spin"></i>
+                              REGISTRARME
+                          </button>
+                      </div>
+                      <div class="col s12 input-field center">
+                          <a href="/ingresar-a-formando-codigo">
+                              ¿Ya estás registrado? Entrar!
+                          </a>
+                      </div>
+                  </div>
+              </form>
+          </div>
+        </div>
+        </div>
+        
+           
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar ventana</a>
+    </div>
+  </div></footer>
+</main>
+<!--  Scripts-->
+<script src="http://www.formandocodigo.com/js/modernizr.custom.js "></script>
+<script src="http://www.formandocodigo.com/js/snap.svg-min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+<script src="/MegaNavbar/assets/plugins/bootstrap-rtl/js/bootstrap-arabic.min.js"></script>
+<script>
+    var navHeight = -1;
+  </script>
+<script src="http://www.formandocodigo.com/js/materialize.min.js "></script>
+<script src="http://www.formandocodigo.com/js/classie.js "></script>
+<!--<script src="http://www.formandocodigo.com/js/demo12.js "></script>-->
+<script src="http://www.formandocodigo.com/js/init.js "></script>
+<script src="http://www.formandocodigo.com/js/nprogress.js "></script>
+<script src="http://www.formandocodigo.com/js/jquery.pjax.js "></script>
+<script src="http://www.formandocodigo.com/js/owl.carousel.js "></script>
+<script src="http://www.formandocodigo.com/js/code.js "></script>
+<script src="https://cdn.jsdelivr.net/sharer.js/latest/sharer.min.js"></script>
+<script src="http://www.formandocodigo.com/js/angular.min.js"></script>
+<script src="http://www.formandocodigo.com/js/moment-with-locales.js"></script>
+<script src="http://www.formandocodigo.com/js/angular-moment.min.js"></script>
+<script src="http://www.formandocodigo.com/js/controladores/app.js"></script>
+<script src="http://www.formandocodigo.com/js/controladores/fcoutController.js"></script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '968423973206792',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "//connect.facebook.net/en_US/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));
+</script>
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98754073-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-98754073-1');
+</script>
+
+<script>
+        $(document).ready(function(){
+        $('.ql-editor img').materialbox();
+    });
+</script>
+</body>
+</html>

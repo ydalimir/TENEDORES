@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="es" itemscope itemtype="http://schema.org/WebPage"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Problemas resueltos String - int - double
+ | Formando Código</title>
+      <meta property='og:title' content='Tutorial: Problemas resueltos String - int - double | Formando Código' />
+  <meta property='og:site_name' content='Formando Código'/>
+  <meta property='og:url' content='https://formandocodigo.com/tutorial/ver/problemas-resueltos-string-int-double' />
+  <meta property='og:description' content='En este video aprenderás el uso de variables y tipos de datos int, double, String con un ejercicio practico....'/>
+  <meta property='og:image' content='https://formandocodigo.com/'/>
+
+  <!-- Meta -->
+    <meta name="description" content="En este video aprenderás el uso de variables y tipos de datos int, double, String con un ejercicio practico...."/>
+  <meta name="keywords" content="java,aprende java,variables"/>
+  <!-- Meta Twitter -->
+
+  <meta name="twitter:title" content="Tutorial: Problemas resueltos String - int - double | Formando Código"/>
+  <meta name="twitter:description" content="En este video aprenderás el uso de variables y tipos de datos int, double, String con un ejercicio ..."/>
+  <meta name="twitter:image" content="https://formandocodigo.com/cursos/portadas/portada-curso-.png"/>
+  <!-- Meta Google+ -->
+  <meta itemprop="name" content="Tutorial: Problemas resueltos String - int - double | Formando Código"/>
+  <meta itemprop="description" content="En este video aprenderás el uso de variables y tipos de datos int, double, String con un ejercicio practico...."/>
+  <meta itemprop="image" content="https://formandocodigo.com/"/>
+
+  <link rel="stylesheet" href="/plugin/plyr/plyr.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS  -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="http://www.formandocodigo.com/css/materialize.min.css?v=1.1" type="text/css" rel="stylesheet" media="screen"/>
+<link href="/MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css?v=1.1" rel="stylesheet">
+    <!-- Font Awesome -->
+<link href="/MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!-- Simple Line Icons -->
+<link href="/MegaNavbar/assets/plugins/simple-line-icons/simple-line-icons.css" rel="stylesheet">
+<!-- MegaNavbar-->
+<link rel="stylesheet" type="text/css" href="/MegaNavbar/assets/css/MegaNavbar.min.css?v=1.2">
+<link rel="stylesheet" type="text/css" href="/MegaNavbar/assets/css/skins/navbar-inverse.css?v=1.1">
+<link rel="stylesheet" type="text/css" href="/MegaNavbar/assets/css/animation/animation.css">
+<link href="http://www.formandocodigo.com/css/style.css?v=1.1" type="text/css" rel="stylesheet" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<!--Icono-->
+<link rel="stylesheet" href="/iconos/celeste/font/flaticon.css" rel="stylesheet">
+<link href="http://www.formandocodigo.com/css/owl.carousel.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/estilo.css?v=1.6"/>
+<link rel="stylesheet" href="http://www.formandocodigo.com/css/nprogress.css"/>
+<link rel="stylesheet" href="http://www.formandocodigo.com/css/hover.css"/>
+<link rel="stylesheet" href="http://www.formandocodigo.com/css/style12.min.css"/>
+<link rel="stylesheet" href="/plugin/preload/css/preloader.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" href="/plugin/whatsapp/floating-wpp.min.css?v=4">
+<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+<link rel='canonical' href='https://formandocodigo.com/' />
+<meta property='og:type' content='website' />
+<meta property='og:locale' content='es_ES' />
+<meta property='og:locale:alternate' content='fr_FR' />
+<meta property='og:locale:alternate' content='it_IT' />
+<meta name="author" content="formandocodigo.com"/>
+<meta name="robots" content="all, index, follow"/>
+<meta name="subject" content="Aprende programando con nuestros cursos prácticos"/>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@formandocodigo" />
+<meta name="twitter:creator" content="@formandocodigo" />
+<meta name="twitter:url" content="https://twitter.com/formandocodigo"/>
+<meta property='article:author' content='https://www.facebook.com/FormandoCodigo' />
+<meta property='article:publisher' content='https://www.facebook.com/FormandoCodigo' />
+<meta property="fb:app_id" content="968423973206792"/>
+<meta name="google-site-verification" content="sQMVDrOfy_j-NXCXhR1JRZDrig8jFVTmNBdXn7EsRj8" />
+<style>
+    .savemoney{
+        
+        opacity: 0.7;
+        text-decoration: line-through;
+    }
+</style>
+      <link rel="stylesheet" type="text/css" href="/pl/skins/glow.css">
+  <script type="text/javascript" src="https://content.jwplatform.com/libraries/sa64lMJY.js"></script>
+  <script>jwplayer.key="GfRkwaq1d0mTiD/WElE6tncXf/Vu9bTL2UxNFg==";</script>
+  <style>
+    .navbar-fixed nav {
+      position: relative!important;
+    }
+  </style>
+  <link rel="stylesheet" href="/flowplayer/skin/minimalist.css">
+  <link rel="stylesheet" href="//releases.flowplayer.org/quality-selector/flowplayer.quality-selector.css">
+</head>
+<body data-ng-app="ComentarioApp">
+<main data-ng-controller="fcController" >
+    <!--MENU-->
+<div class="navbar  navbar-rel " role="navigation" id="miNav">
+  <div class="container">
+    <!-- for full width layout or use class="container" for boxed layout -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MegaNavbar">
+        <span class="sr-only">Expandir menu</span>
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand-white img-logo" href="/" class="brand-logo"><img src="http://www.formandocodigo.com/img/formando-codigo-bn.svg" style="width: 210px;" alt="Formando Código"/></a>
+      <a class="navbar-brand brand-color img-logo hidden" href="/" class="brand-logo"><img src="http://www.formandocodigo.com/img/formando-codigo.svg" style="width: 210px;" alt="Formando Código"/></a>
+      <a href="#" data-activates="slide-out" class="button-collapse waves-effect waves-light btn-menu-responsive"><i class="flaticon-menu-1"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="MegaNavbar">
+      <ul class="nav navbar-nav navbar-left">
+        <!-- Left side navigation-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- Right side navigation-->
+        <!-- account -->
+        <a href="/cursos" class="navbar-link navbar-left hidden-md hidden-sm"><span class="">Cursos <span style="color:red;"><i class="fa fa-percent"></i></span></span></a>
+                <a href="/suscripcion/planes" class="navbar-link navbar-left"><span class="">Suscripción <span style="color:red;"><i class="fa fa-percent"></i></span></span> </a>
+                <a href="/gratis" class="navbar-link navbar-left hidden-md hidden-sm"><span class="">Gratis</span></a>
+        <li class="dropdown-recursos">
+          <a data-toggle="dropdown" href="javascript:;" id="dropdownMenu3" class="dropdown-toggle hidden-lg" aria-expanded="true"><i class="flaticon-info"></i>&nbsp;<span> Contenidos </span><span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+            <li><a href="/cursos">Cursos</a></li>
+            <li><a href="/tutoriales">Tutoriales y videos gratuitos</a></li>
+            <li><a href="/blog">Blog y novedades</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-soporte">
+          <a data-toggle="dropdown" href="javascript:;" id="dropdownMenu1" class="dropdown-toggle hidden-sm" aria-expanded="true"><i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;<span> Más </span><span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="/suscripcion/formasdepago">Formas de pago</a></li>
+            <li><a href="/faq">Preguntas frecuentes</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/deseos">Deseos</a></li>
+            
+          </ul>
+        </li>
+                <li class="divider"></li>
+        <a href="/ingresar-a-formando-codigo" class="navbar-link navbar-left"><span class="hidden-sm hidden-md">Iniciar sesión</span><span class="hidden-lg">Login</span></a>
+        <a href="/registrarme-en-formando-codigo" class="navbar-link hidden-sm link-call navbar-left"><span>Registrarme</span></a>
+              </ul>
+    </div>
+  </div>
+</div>
+<ul id="slide-out" class="side-nav collapsible collapsible-accordion">
+    <li><a class="waves-effect bold" href="/ingresar-a-formando-codigo">Iniciar Sesión</a></li>
+  <li><a class="waves-effect bold" href="/registrarme-en-formando-codigo">Registrate</a></li>
+            <li><a href="/suscripcion/planes">Precios</a></li>
+          <li><a class="waves-effect" href="/cursos">Cursos</a></li>
+  <li><a class="waves-effect" href="/tutoriales">Tutoriales</a></li>
+  <li><a class="waves-effect" href="/blog">Blog</a></li>
+  <li>
+    <a class="collapsible-header waves-effect waves-light">Más <i class="flecha-right fa fa-caret-down"></i></a>
+    <div class="collapsible-body">
+      <ul>
+        <li><a class="waves-effect" href="/suscripcion/formasdepago">Formas de pago</a></li>
+        <li><a class="waves-effect" href="/faq">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+  </li>
+  </ul>
+<!--MENU-->
+
+
+    <nav class="black z-depth-1">
+  <div class="container">
+    <div class="row">
+      <div class="nav-wrapper">
+        <div class="col l12 s12 m12 truncate">
+          <a href="http://www.formandocodigo.com" class="breadcrumb">Inicio</a>
+                    <a href="http://www.formandocodigo.com/cursos" class="breadcrumb">Cursos</a>
+          <a href="http://www.formandocodigo.com/curso/java-basico" class="breadcrumb">Java básico</a>
+          <a class="breadcrumb">Sentencias y Secuenciales</a>
+                    <a class="breadcrumb">Problemas resueltos String - int - double</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="ver-curso"> <section class="video-ver-curso"> <div class="container"> <div class="row"> <div class="col l12 s12 m12">  
+
+  <div class="video-container z-depth-1">     <div class="js-player" data-plyr="{'autoplay':false}" data-vimeo-width="640" id="handstick" data-type="vimeo" data-video-id="247749027"></div>
+      </div> 
+
+  <br> </div> <div class="col l10"> <h1 class="titulo-video">Problemas resueltos String - int - double</h1> <p class="description-video" style="font-size:15px!important;"> En este video aprenderás el uso de variables y tipos de datos int, double, String con un ejercicio practico. </p> <p class="label-title"> Etiquetas: </p>  <a href="http://www.formandocodigo.com/etiqueta/java" class="chip grey darken-2 chip-blue-white"> java </a>  <a href="http://www.formandocodigo.com/etiqueta/aprende-java" class="chip grey darken-2 chip-blue-white"> aprende java </a>  <a href="http://www.formandocodigo.com/etiqueta/variables" class="chip grey darken-2 chip-blue-white"> variables </a>  </div> </div> </div> </section> </section>
+
+  <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large grey darken-3">
+      <i class="material-icons large" style="line-height: 58.5px;margin-left: -3px;">share</i>
+    </a>
+    <ul>
+      <li>
+        <button class="sharer btn-floating blue darken-3"
+        data-sharer="facebook"
+        data-title="Formando código | Problemas resueltos String - int - double"
+        data-url="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-y-secuenciales/problemas-resueltos-string-int-double"><i style="font-size: 16px;" class="fa fa-facebook"></i></button>
+      </li>
+      <li>
+        <button class="sharer btn-floating blue"
+        data-sharer="twitter"
+        data-title="Formando código | Problemas resueltos String - int - double"
+        data-url="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-y-secuenciales/problemas-resueltos-string-int-double"><i style="font-size: 16px;" class="fa fa-twitter"></i></button>
+      </li>
+      <li>
+        <button class="sharer btn-floating red darken-3"
+        data-sharer="googleplus"
+        data-title="Formando código | Problemas resueltos String - int - double"
+        data-url="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-y-secuenciales/problemas-resueltos-string-int-double"><i style="font-size: 16px;" class="fa fa-google-plus"></i></button>
+      </li>
+    </ul>
+  </div>
+
+      <div class="curso-detalle-1" data-ng-controller="ComentarioController">
+    <div class="contenido-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l12 m12">
+                    <ul class="tabs">
+                        <li class="tab col s3"><a class="active" href="#test1">CONTENIDO</a></li>
+                                                                                                <li class="tab col s3"><a href="#test2">PROFESOR</a></li>
+                                                <li class="tab col s3"><a href="#test3">COMENTARIOS <span ng-cloak>( <% coment.length %> )</span></a></li>
+                                                <!--<li class="tab col s3"><a href="#test4">RECURSOS</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--Contenido-->
+            <div id="test1" class="col l12">
+                <div class="col l8 descripcion-curso-container">
+                    <p>Existen un porcentaje muy alto de aplicaciones y sitios web que trabajan utilizando JAVA y con el pasar de los d&iacute;as el desarrollo de este tipo de aplicaciones crece cada vez mas, esto se debe a que JAVA es seguro, r&aacute;pido y fiable, lo puedes utilizar desde computadores de escritorio, laptops, m&oacute;viles, etc. En este curso te aprender&aacute;s a trabajar con este genial lenguaje de programaci&oacute;n, aprender&aacute;s a reconocer sus tipos de datos, trabajaras con variables, sentencias secuenciales, condicionales, bucles, matrices, funciones y todo eso lo estar&aacute;s aplicando a trav&eacute;s de la GUI (interfaz gr&aacute;fica de usuario).</p>
+
+                                                            <ul class="collection with-header video-lista">
+                        <li class="collection-header cabecera"><h5>1. Presentación del curso de java básico</h5>
+                        </li>
+                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/presentacion-del-curso-de-java-basico/presentacion-del-curso-de-java-basico" class="item-video"><i class="fa fa-play-circle-o play"></i> Presentación del curso de java básico</a><span class="hidden-md hidden-sm hide-on-small-only">01:13</span></li>
+                                                                                            </ul>
+                                                            <ul class="collection with-header video-lista">
+                        <li class="collection-header cabecera"><h5>2. Introducción a java básico</h5>
+                        </li>
+                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/introduccion-a-java-basico/conceptos-basicos-de-java" class="item-video"><i class="fa fa-play-circle-o play"></i> Conceptos básicos de Java</a><span class="hidden-md hidden-sm hide-on-small-only"></span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/introduccion-a-java-basico/descarga-de-software-para-entorno-java" class="item-video"><i class="fa fa-play-circle-o play"></i> Descarga de software para entorno java</a><span class="hidden-md hidden-sm hide-on-small-only">03:57</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/introduccion-a-java-basico/instalacion-de-software-para-entorno-java" class="item-video"><i class="fa fa-play-circle-o play"></i> Instalación de software para entorno java</a><span class="hidden-md hidden-sm hide-on-small-only">03:44</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/introduccion-a-java-basico/configuracion-de-eclipse-y-creacion-de-primer-proyecto" class="item-video"><i class="fa fa-play-circle-o play"></i> Configuración de eclipse y creación de primer proyecto</a><span class="hidden-md hidden-sm hide-on-small-only">05:24</span></li>
+                                                                                            </ul>
+                                                            <ul class="collection with-header video-lista">
+                        <li class="collection-header cabecera"><h5>3. Sentencias y Secuenciales</h5>
+                        </li>
+                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-y-secuenciales/variable-string" class="item-video"><i class="fa fa-play-circle-o play"></i> Variable String</a><span class="hidden-md hidden-sm hide-on-small-only">05:24</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-y-secuenciales/variable-int-y-double" class="item-video"><i class="fa fa-play-circle-o play"></i> Variable int y double</a><span class="hidden-md hidden-sm hide-on-small-only">09:20</span></li>
+                                                                                                                                                <li class="collection-item  active "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-y-secuenciales/problemas-resueltos-string-int-double" class="item-video"><i class="fa fa-play-circle-o play"></i> Problemas resueltos String - int - double</a><span class="hidden-md hidden-sm hide-on-small-only">08:38</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-y-secuenciales/creacion-de-gui-con-jframe" class="item-video"><i class="fa fa-play-circle-o play"></i> Creación de GUI con JFrame</a><span class="hidden-md hidden-sm hide-on-small-only">05:12</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-y-secuenciales/agregando-programacion-en-el-jframe" class="item-video"><i class="fa fa-play-circle-o play"></i> Agregando programación en el JFrame</a><span class="hidden-md hidden-sm hide-on-small-only">03:30</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-y-secuenciales/agregando-programacion-en-el-jframe-2da-parte" class="item-video"><i class="fa fa-play-circle-o play"></i> Agregando programación en el JFrame | 2da Parte</a><span class="hidden-md hidden-sm hide-on-small-only">08:13</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-y-secuenciales/problema-resuelto-con-jframe" class="item-video"><i class="fa fa-play-circle-o play"></i> Problema resuelto con JFrame</a><span class="hidden-md hidden-sm hide-on-small-only">08:22</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-y-secuenciales/problema-resuelto-con-jframe-2da-parte" class="item-video"><i class="fa fa-play-circle-o play"></i> Problema resuelto con JFrame | 2da Parte</a><span class="hidden-md hidden-sm hide-on-small-only">07:50</span></li>
+                                                                                            </ul>
+                                                            <ul class="collection with-header video-lista">
+                        <li class="collection-header cabecera"><h5>4. Sentencias condicionales</h5>
+                        </li>
+                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-condicionales/condicional-if-y-else-en-java" class="item-video"><i class="fa fa-play-circle-o play"></i> Condicional if y else en Java</a><span class="hidden-md hidden-sm hide-on-small-only">07:10</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-condicionales/sentencia-if-else-problema-resuelto-parte-1" class="item-video"><i class="fa fa-play-circle-o play"></i> Sentencia IF - ELSE - Problema Resuelto Parte 1</a><span class="hidden-md hidden-sm hide-on-small-only">9:00</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-condicionales/sentenci-if-else-problema-resuelto-parte-2" class="item-video"><i class="fa fa-play-circle-o play"></i> Sentenci IF - ELSE - Problema Resuelto Parte 2</a><span class="hidden-md hidden-sm hide-on-small-only">8:00</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-condicionales/sentenci-if-else-problema-resuelto-parte-3" class="item-video"><i class="fa fa-play-circle-o play"></i> Sentenci IF - ELSE - Problema Resuelto Parte 3</a><span class="hidden-md hidden-sm hide-on-small-only">10:00</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-condicionales/sentencia-condicional-if-anidado" class="item-video"><i class="fa fa-play-circle-o play"></i> Sentencia Condicional IF Anidado</a><span class="hidden-md hidden-sm hide-on-small-only">12:00</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/sentencias-condicionales/condicional-switch" class="item-video"><i class="fa fa-play-circle-o play"></i> Condicional Switch</a><span class="hidden-md hidden-sm hide-on-small-only">11:00</span></li>
+                                                                                            </ul>
+                                                            <ul class="collection with-header video-lista">
+                        <li class="collection-header cabecera"><h5>5. Métodos - Bucles - Arreglos</h5>
+                        </li>
+                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/metodos-bucles-arreglos/variables-locales-y-globales" class="item-video"><i class="fa fa-play-circle-o play"></i> Variables locales y globales</a><span class="hidden-md hidden-sm hide-on-small-only">11:00</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/metodos-bucles-arreglos/metodos-void-con-parametros-y-sin-parametros" class="item-video"><i class="fa fa-play-circle-o play"></i> Métodos void con parametros y sin parametros</a><span class="hidden-md hidden-sm hide-on-small-only">12:00</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/metodos-bucles-arreglos/metodos-con-valor-de-retorno" class="item-video"><i class="fa fa-play-circle-o play"></i> Métodos con valor de retorno</a><span class="hidden-md hidden-sm hide-on-small-only">12:00</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/metodos-bucles-arreglos/contadores-y-acumuladores" class="item-video"><i class="fa fa-play-circle-o play"></i> Contadores y acumuladores</a><span class="hidden-md hidden-sm hide-on-small-only">14:00</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/metodos-bucles-arreglos/bucle-for" class="item-video"><i class="fa fa-play-circle-o play"></i> Bucle For</a><span class="hidden-md hidden-sm hide-on-small-only">9:00</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/metodos-bucles-arreglos/bucle-while" class="item-video"><i class="fa fa-play-circle-o play"></i> Bucle While</a><span class="hidden-md hidden-sm hide-on-small-only">NaN</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/metodos-bucles-arreglos/bucle-do-while" class="item-video"><i class="fa fa-play-circle-o play"></i> Bucle Do-While</a><span class="hidden-md hidden-sm hide-on-small-only">4:00</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/metodos-bucles-arreglos/arreglos" class="item-video"><i class="fa fa-play-circle-o play"></i> Arreglos</a><span class="hidden-md hidden-sm hide-on-small-only">5:00</span></li>
+                                                                                                                                                <li class="collection-item   "><a href="http://www.formandocodigo.com/tutorial/ver/java-basico/metodos-bucles-arreglos/matricez" class="item-video"><i class="fa fa-play-circle-o play"></i> Matricez</a><span class="hidden-md hidden-sm hide-on-small-only">8:00</span></li>
+                                                                                            </ul>
+                                                        </div>
+                <div class="col l4  hide-on-med-and-down">
+                    <div class="card">
+                        <div class="row categoria">
+                            <div class="col s12">
+                                <h3>Valora este curso</h3>
+                                <input id="idcurso" type="hidden" value="14"></input>
+                                <div class="divider"></div>
+                                <div class="estrella">
+                                    <a ng-class="{'estrella_active' : puntajes >=1}" ng-click="puntaje(14, 1)"><i class="fa fa-star"></i></a>
+                                    <a ng-class="{'estrella_active' : puntajes >=2}" ng-click="puntaje(14, 2)"><i class="fa fa-star"></i></a>
+                                    <a ng-class="{'estrella_active' : puntajes >=3}" ng-click="puntaje(14, 3)"><i class="fa fa-star"></i></a>
+                                    <a ng-class="{'estrella_active' : puntajes >=4}" ng-click="puntaje(14, 4)"><i class="fa fa-star"></i></a>
+                                    <a ng-class="{'estrella_active' : puntajes >=5}" ng-click="puntaje(14, 5)"><i class="fa fa-star"></i></a>
+                                </div>
+                                <p class="detalle-punto" ng-cloak>
+                                    <% puntajes %> Puntos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row categoria">
+                            <div class="col s12">
+                                <h3>Categoría</h3>
+                                <div class="divider"></div>
+                                <a href="http://www.formandocodigo.com/categoria/desarrollo-movil">
+                                    <div class="col l5 m6 s6">
+                                        <img src="https://formandocodigo.com/categoria/imagen/icono-programacion.png" class="responsive-img" alt="Desarrollo Móvil">
+                                    </div>
+                                    <div class="col l7 m6 s6">
+                                        <span>Desarrollo Móvil</span>
+                                    </div>
+                                </a>
+                            </div>
+                                                    </div>
+                    </div>
+                </div>
+                <div class="col l12 s12 m12">
+                        <br>
+                        <div class="divider"></div>
+                        <br>
+                        <h4 class="comtitulo-post">Compartir</h4>
+                        <div id="share"></div>
+                    </div>
+                <div class="col l12 hide-on-small-only">
+                    <div class="row">
+                        <div class="col s12">
+                            <br>
+                            <div class="divider"></div>
+                            <br>
+                            <h4 class="comtitulo-post">Cursos relacionados</h4>
+                        </div>
+                                                <div class="col l4">
+                            <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+        <a href="http://www.formandocodigo.com/curso/web-service-para-android-con-php-y-mysql">
+                    <span class="compra label-info">PREMIUM </span>
+                    <img src="https://admin.formandocodigo.com/imagenes/cursos/iconos/icono-curso-web-service-para-android-con-php-y-mysql-full.png" alt="Web Service para Android con Php y Mysql">
+      </a>
+      <a href="http://www.formandocodigo.com/categoria/desarrollo-movil" class="categoria-label label-info">Desarrollo Móvil</a>
+  </div>
+  <a class="card-content curso-card-content" href="http://www.formandocodigo.com/curso/web-service-para-android-con-php-y-mysql">
+    <span class="card-title titulo-card-curso activator grey-text text-darken-4 truncate" itemprop="nombre">Web Service para Android con Php y Mysql</span>
+    <span class="descripcion-card-curso">
+        Login consultas y actualización de datos
+    </span>
+</a>
+
+<div class="card-action">
+  <div class="row" style="margin-bottom: 0px">
+
+    <span class="col s6" style="color: #ffa213;">
+      <span class="rating" title="4.8 Sterne von 5"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span></span> <span class="reviews-no"></span> 
+    </span>
+
+    <span class="col s6 price text-right" style="    font-weight: 500;
+    font-size: 18px;
+    color: #277dff;
+    margin-top: -4px;">
+                        <span>$19.99</span> USD <span class="savemoney">$40</span>
+                  </span>
+  </div>                   
+</div>
+</div>                        </div>
+                                                <div class="col l4">
+                            <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+        <a href="http://www.formandocodigo.com/curso/android-sqlite-practico">
+                    <span class="compra label-info">PREMIUM </span>
+                    <img src="https://admin.formandocodigo.com/imagenes/cursos/iconos/icono-curso-android-sqlite-practico-full.png" alt="Android + SQLite Práctico">
+      </a>
+      <a href="http://www.formandocodigo.com/categoria/desarrollo-movil" class="categoria-label label-info">Desarrollo Móvil</a>
+  </div>
+  <a class="card-content curso-card-content" href="http://www.formandocodigo.com/curso/android-sqlite-practico">
+    <span class="card-title titulo-card-curso activator grey-text text-darken-4 truncate" itemprop="nombre">Android + SQLite Práctico</span>
+    <span class="descripcion-card-curso">
+        Aprende a implementar una app con SQLite
+    </span>
+</a>
+
+<div class="card-action">
+  <div class="row" style="margin-bottom: 0px">
+
+    <span class="col s6" style="color: #ffa213;">
+      <span class="rating" title="4.8 Sterne von 5"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span></span> <span class="reviews-no"></span> 
+    </span>
+
+    <span class="col s6 price text-right" style="    font-weight: 500;
+    font-size: 18px;
+    color: #277dff;
+    margin-top: -4px;">
+                        <span>$19.99</span> USD <span class="savemoney">$30</span>
+                  </span>
+  </div>                   
+</div>
+</div>                        </div>
+                                                <div class="col l4">
+                            <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+        <a href="http://www.formandocodigo.com/curso/android-desde-cero">
+                    <span class="free label-info">Gratis </span>
+                    <img src="https://admin.formandocodigo.com/imagenes/cursos/iconos/icono-curso-android-desde-cero-full.png" alt="Android desde cero">
+      </a>
+      <a href="http://www.formandocodigo.com/categoria/desarrollo-movil" class="categoria-label label-info">Desarrollo Móvil</a>
+  </div>
+  <a class="card-content curso-card-content" href="http://www.formandocodigo.com/curso/android-desde-cero">
+    <span class="card-title titulo-card-curso activator grey-text text-darken-4 truncate" itemprop="nombre">Android desde cero</span>
+    <span class="descripcion-card-curso">
+        Instalación y bases de Android Studio
+    </span>
+</a>
+
+<div class="card-action">
+  <div class="row" style="margin-bottom: 0px">
+
+    <span class="col s6" style="color: #ffa213;">
+      <span class="rating" title="4.8 Sterne von 5"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span></span> <span class="reviews-no"></span> 
+    </span>
+
+    <span class="col s6 price text-right" style="    font-weight: 500;
+    font-size: 18px;
+    color: #277dff;
+    margin-top: -4px;">
+                        <span>Gratis</span>
+                  </span>
+  </div>                   
+</div>
+</div>                        </div>
+                                            </div>
+                </div>
+            </div>
+            <!--profesores-->
+            <div id="test2" class="col s12">
+                
+            </div>
+                                <!--comentarios-->
+        <div id="test3" class="col s12 blog-detalle">
+        <div class="col s12 m6 l12">
+                        <div class="card center-align">
+              <h5 style="    font-family: Roboto;font-weight: 300;margin: 0px;padding: 0px;">
+                <br>
+                Registrate para dejar tu comentario
+            </h5>
+            <p>
+                <a class="waves-effect waves-light btn light-blue" href="http://www.formandocodigo.com/registrarme-en-formando-codigo">Crea tu cuenta gratuita</a>
+                <br>
+                <br>
+            </p>
+        </div>
+                <div class="row">
+          <div class="col l12 s12 m12 left-align contenido-blog">
+            <h2><% coment.length %> Comentario<% coment.length==1?'':'s' %></h2>
+            <input ng-model="video" type="hidden" id="video" value="255">
+            <!--Comentario -->
+            <div ng-repeat="c in coment" class="card-panel hoverable">
+              <img fallbackSrc="https://formandocodigo.com/favicon.png" ng-show="c.user.avatar.length == null ? true : false" class="icono-usuario circle" width="60" height="60" ng-src="https://formandocodigo.com/img/usericon.png">
+              <img fallbackSrc="https://formandocodigo.com/favicon.png" ng-show="c.user.avatar != null ? true : false" class="icono-usuario circle" width="60" height="60" ng-src="<% c.user.avatar %>">
+              <div class="comentario-usuario">
+                <a href=""><% c.user.name %></a>
+                <div class="date" am-time-ago="c.created_at"></div>
+                <p><% c.comentario %></p>
+                <div ng-repeat = "ch in child">
+                    <div ng-show="c.id == ch.parent_id ? true : false">
+                        <div class="divider"></div><br>
+                        <img fallbackSrc="https://formandocodigo.com/favicon.png" ng-show="ch.user.avatar.length == null ? true : false" class="icono-usuario circle" width="60" height="60" ng-src="https://formandocodigo.com/img/usericon.png">
+                        <img fallbackSrc="https://formandocodigo.com/favicon.png" ng-show="ch.user.avatar != null ? true : false" class="icono-usuario circle" width="60" height="60" ng-src="<% ch.user.avatar %>">
+                        <div class="comentario-usuario">
+                            <a href=""><% ch.user.name %></a>
+                            <div class="date" am-time-ago="ch.created_at"></div>
+                            <p><% ch.comentario %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin comentario-->
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!--GESTIONAR CERTIFICADO-->
+<!--GESTIONAR CERTIFICADO-->  
+    <div class="floating-wpp"></div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col l3 s12 m6 center" id="Table_of_Contents">
+                <div class="block-title">
+                    Formando Código
+                </div>
+                <p class="black-text text-lighten-4" style="font-size: 13px;line-height: 20px;">Es una página pensada en todas aquellas personas autodidactas que quieren aprender o aumentar sus conocimientos en las distintas tecnologías de programación escritorio, Web y Móvil.</p>
+                <div
+                class="fb-like"
+                data-share="true"
+                data-width="200"
+                data-show-faces="true">
+            </div>
+            <br><br>
+        </div>
+        <div class="col l3 s12 m6 center">
+            <div class="block-title">
+                PÁGINAS ÚTILES
+            </div>
+            <ul class="enlaces">
+                <li><a href="/terminos-y-condiciones">TERMINOS Y CONDICIONES</a></li>
+                <li><a href="/deseos">DESEOS</a></li>
+                <li><a href="/suscripcion/formasdepago">FORMAS DE PAGO</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <!--<li><a class="" href="http://www.formandocodigo.com/contacto">CONTACTO</a></li>-->
+            </ul>
+        </div>
+        <div class="col l3 s12 m6 center">
+            <div class="block-title">
+                Datos de Contacto
+            </div>
+            <div class="block-content">
+               <div class="contact-item" style="margin-top: -2px; box-shadow:none!important; background:none;"><img src="/img/iconos/email.svg" alt="correo formando código"><a href="mailto:info@formandocodigo.com" class="text-contact-item">info@formandocodigo.com</a></div>
+               <div class="contact-item" style="box-shadow:none!important; background:none;"><img src="/img/iconos/phone-call.svg" alt="correo formando código"><a href="tel:+51964078717" class="text-contact-item">(+51) 964 078 717</a></div>
+           </div>
+           <ul class="redes-sociales" style="margin-top: -15px;">
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Facebook" id="facebook" href="https://www.facebook.com/FormandoCodigo" target="_blank"></a></li>
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Twitter" id="twitter" href="https://twitter.com/formandocodigo" target="_blank"></a></li>
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Google-plus" id="google-plus" href="https://plus.google.com/108666760835668268134" target="_blank"></a></li>
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Youtube" id="youtube" href="http://youtube.com/FormandoCodigo" target="_blank"></a></li>
+        </ul>
+    </div>
+    <div class="col l3 s12 m6 center">
+        <div class="block-title">
+            Formas de Pago
+        </div>
+        <div class="pagos-iconos" style="margin-top: 14px;">
+            <img src="/img/formas-de-pago.svg" alt="Formas de pago FormandoCodigo">
+        </div>
+    </div>
+</div>
+</div>
+<div class="barra-footer">
+    <div class="container">
+        <div class="col m12 l12">
+            <div class="row">
+                <div class="col l6 s12 text-left">
+                    <h6 class="dacdevs"><a href="http://facebook.com/dacdevs"><img src="/img/iconos/dacdevs.svg" alt="Dac Developers" class="img-dacdevs"><span>Dac Developers - Desarrollo web</span></a></h6>
+                </div>
+                <div class="col l6 s12 text-right">
+                    <h6 class="copy">2015 - 2020 | <strong>©FormandoCódigo</strong> <span class="derechos">Todos los derechos reservados</span></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mregister" class="modal">
+    <div class="modal-content">
+      <div class="contenido">
+        <div class="row">
+        <div class="col l4 s12 m6">
+           <div class="row">
+              <div class="s12 center input-field">
+                  <span class="social-grey-text">
+                      Crea tu cuenta con: 
+                  </span>
+              </div>
+              <div class="col s12 input-field center">
+                  <a href="/facebook/authorize" class="waves-effect btn-social waves-light btn blue darken-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook">
+                      <i class="fa fa-facebook">
+                      </i>
+                  </a>
+                <br>
+                  
+                  <a href="/google/authorize" class="waves-effect btn-social red darken-4 waves-light btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Google+">
+                      <i class="fa fa-google-plus">
+                      </i>
+                  </a>
+              </div>
+          </div>
+        </div>
+        <div class="col l8 s12 m6">
+          <div class="row">
+            <div class="s12 center input-field">
+              <span class="social-grey-text">
+                  O registrate con tu email
+              </span>
+            </div>
+          </div>
+          <div class="row">
+              <form class="col s12" role="form" method="POST" data-ng-submit="enviarRegistro()">
+                  <input type="hidden" name="_token" value="Sw8q8egdbk21suw1cEIXEponYcapZ0ZiGM6i2OHH">
+                  <div class="row">
+                      <div class="input-field col s12 m12 l6 ">
+                          <input data-ng-model="registro.nombre" id="name" required min="3" title="Ingrese su Nombre" name="name" type="text" value="" class="validate "/>
+                          <label for="name">
+                              Nombres
+                          </label>
+                          <span class="help-block" data-ng-if="errores.nombre.length">
+                              <strong><% errores.nombre[0] %></strong>
+                          </span>
+                      </div>
+                      <div class="input-field col s12 m12 l6">
+                          <input id="emailregistro" data-ng-model="registro.email" type="email" required title="Ingrese su dirección de correo electronico" name="email" class="validate " value=""/>
+                          <label for="emailregistro">
+                              Email
+                          </label>
+                          <span class="help-block" data-ng-if="errores.email.length">
+                              <strong><% errores.email[0] %></strong>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s12 m12 l6">
+                          <input data-ng-model="registro.password" id="passwordregistro" min="6" maxlength="30" required title="Ingrese una contraseña segura" type="password" name="password" class="validate "/>
+                          <label for="passwordregistro">
+                              Contraseña
+                          </label>
+                          <span class="help-block" data-ng-if="errores.password.length">
+                              <strong><% errores.password[0] %></strong>
+                          </span>
+                      </div>
+                      <div class="input-field col s12 m12 l6">
+                          <input data-ng-model="registro.password_confirmation" id="password_confirmation" required title="Ingrese su contraseña nuevamente" name="password_confirmation" type="password" class="validate "/>
+                          <label for="password_confirmation">
+                              Repetir contraseña
+                          </label>
+                          <span class="help-block" data-ng-if="errores.password_confirmation.length">
+                              <strong><% errores.password_confirmation[0] %></strong>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col s12 input-field left">
+                          <input ng-model="teracepto" type="checkbox" class="blue" id="test5" />
+                          <label for="test5">
+                              He leído y acepto los <a class="/terminos-y-condiciones">términos y condiciones</a> de Formando Código.
+                          </label>
+                      </div>
+                      <div class="col s12 input-field center">
+                          <br>
+                          <br>
+                      </div>
+                      <div class="col s12 input-field center">
+                          <button type="submit" data-gn-model="button" ng-disabled="enviabtn" class="btn waves-effect waves-light light-blue">
+                              <i data-ng-show="!enviando" class="fa fa-send right">
+                              </i>
+                              <i data-ng-show="enviando" class="fa fa-circle-o-notch fa-spin"></i>
+                              REGISTRARME
+                          </button>
+                      </div>
+                      <div class="col s12 input-field center">
+                          <a href="/ingresar-a-formando-codigo">
+                              ¿Ya estás registrado? Entrar!
+                          </a>
+                      </div>
+                  </div>
+              </form>
+          </div>
+        </div>
+        </div>
+        
+           
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar ventana</a>
+    </div>
+  </div></footer>
+</main>
+<!--  Scripts-->
+<script src="http://www.formandocodigo.com/js/modernizr.custom.js "></script>
+<script src="http://www.formandocodigo.com/js/snap.svg-min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+<script src="/MegaNavbar/assets/plugins/bootstrap-rtl/js/bootstrap-arabic.min.js"></script>
+<script>
+    var navHeight = 80;
+  </script>
+<script src="http://www.formandocodigo.com/js/materialize.min.js "></script>
+<script src="http://www.formandocodigo.com/js/classie.js "></script>
+<!--<script src="http://www.formandocodigo.com/js/demo12.js "></script>-->
+<script src="http://www.formandocodigo.com/js/init.js "></script>
+<script src="http://www.formandocodigo.com/js/nprogress.js "></script>
+<script src="http://www.formandocodigo.com/js/jquery.pjax.js "></script>
+<script src="http://www.formandocodigo.com/js/owl.carousel.js "></script>
+<script src="http://www.formandocodigo.com/js/code.js "></script>
+<script src="https://cdn.jsdelivr.net/sharer.js/latest/sharer.min.js"></script>
+<script src="http://www.formandocodigo.com/js/angular.min.js"></script>
+<script src="http://www.formandocodigo.com/js/moment-with-locales.js"></script>
+<script src="http://www.formandocodigo.com/js/angular-moment.min.js"></script>
+<script src="http://www.formandocodigo.com/js/controladores/app.js"></script>
+<script src="http://www.formandocodigo.com/js/controladores/fcoutController.js"></script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '968423973206792',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "//connect.facebook.net/en_US/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));
+</script>
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98754073-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-98754073-1');
+</script>
+
+  <script src="http://www.formandocodigo.com/js/controladores/comentarioController.js"></script>
+      <script src="//releases.flowplayer.org/6.0.5/flowplayer.min.js"></script>
+    <script src="//releases.flowplayer.org/quality-selector/flowplayer.quality-selector.min.js"></script>
+    <script src="/plugin/plyr/plyr.js"></script>
+    <script>plyr.setup('.js-player');</script>
+    <script>
+      var container = document.getElementById("player");
+      flowplayer(container, {
+        qualities:["480p","1080p"],
+        defaultQuality: "1080p",
+        poster: "https://formandocodigo.com/cursos/portadas/portada-curso-.png",
+        title: "Problemas resueltos String - int - double",
+        autoplay:true,
+        clip: {
+          sources: [
+          { type: "video/mp4",
+          src:  "http://www.formandocodigo.com/recurso/video/eyJpdiI6InNib2ZKU1RsVFJZNzE0UVdBdzkzV1E9PSIsInZhbHVlIjoia3JEOE1MSE9qeUk3V0Rla2tJbUFIQT09IiwibWFjIjoiMWRkNDE1YzIzM2FjNDJiOWVhZmZmMGJmNGJiNDQ5YmQ5ZTVhOGQxZDg1YzE3ODUxMTgyYjM5YjZiYjJmYjBkNyJ9/video" }
+          ]
+        },
+        embed: {
+          // embed including quality selector
+          iframe: "//flowplayer.org/standalone/multires/drive-iframe.html",
+          width: "864px",
+          height: "363px" // 360 + 3 ! player height + room for slim timeline
+        }
+      });
+    </script>
+  </body>
+</html>

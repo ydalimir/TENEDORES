@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Por qué aprender Desarrollo de Aplicaciones Móviles? | Formando Código</title>
+  <link href="http://www.formandocodigo.com/css/prism.css" type="text/css" rel="stylesheet"/>
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.1.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.1.0/jssocials-theme-flat.css" />
+  
+  <meta property='og:title' content='¿Por qué aprender Desarrollo de Aplicaciones Móviles? | Formando Código' />
+  <meta property='og:site_name' content='Formando Código'/>
+  <meta property='og:url' content='http://www.formandocodigo.com/post/por-que-aprender-desarrollo-de-aplicaciones-moviles' />
+  <meta property='og:description' content='Si dijéramos que debemos aprender a programar Android o IOS por la gran cantidad de audien'/>
+  <meta property='og:image' content='https://admin.formandocodigo.com/imagenes/blog/portadas/cover-post-por-que-aprender-desarrollo-de-aplicaciones-moviles-full.jpg'/>
+  <!-- Meta -->
+
+  <meta name="description" content="Si dijéramos que debemos aprender a programar Android o IOS por la gran cantidad..."/>
+  <meta name="keywords" content="android,desarrollo,moviles,movil"/>
+  <!-- Meta Twitter -->
+
+  <meta name="twitter:title" content="¿Por qué aprender Desarrollo de Aplicaciones Móviles? | Formando Código"/>
+  <meta name="twitter:description" content="Si dijéramos que debemos apren..."/>
+  <meta name="twitter:image" content="https://admin.formandocodigo.com/imagenes/blog/portadas/cover-post-por-que-aprender-desarrollo-de-aplicaciones-moviles-full.jpg"/>
+  <!-- Meta Google+ -->
+  <meta itemprop="name" content="¿Por qué aprender Desarrollo de Aplicaciones Móviles? | Formando Código"/>
+  <meta itemprop="description" content="Si dijéramos que debemos aprender a programar Android o IOS por la gran cantidad..."/>
+  <meta itemprop="image" content="https://admin.formandocodigo.com/imagenes/blog/portadas/cover-post-por-que-aprender-desarrollo-de-aplicaciones-moviles-full.jpg"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS  -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="http://www.formandocodigo.com/css/materialize.min.css?v=1.1" type="text/css" rel="stylesheet" media="screen"/>
+<link href="/MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css?v=1.1" rel="stylesheet">
+    <!-- Font Awesome -->
+<link href="/MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!-- Simple Line Icons -->
+<link href="/MegaNavbar/assets/plugins/simple-line-icons/simple-line-icons.css" rel="stylesheet">
+<!-- MegaNavbar-->
+<link rel="stylesheet" type="text/css" href="/MegaNavbar/assets/css/MegaNavbar.min.css?v=1.2">
+<link rel="stylesheet" type="text/css" href="/MegaNavbar/assets/css/skins/navbar-inverse.css?v=1.1">
+<link rel="stylesheet" type="text/css" href="/MegaNavbar/assets/css/animation/animation.css">
+<link href="http://www.formandocodigo.com/css/style.css?v=1.1" type="text/css" rel="stylesheet" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<!--Icono-->
+<link rel="stylesheet" href="/iconos/celeste/font/flaticon.css" rel="stylesheet">
+<link href="http://www.formandocodigo.com/css/owl.carousel.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/estilo.css?v=1.6"/>
+<link rel="stylesheet" href="http://www.formandocodigo.com/css/nprogress.css"/>
+<link rel="stylesheet" href="http://www.formandocodigo.com/css/hover.css"/>
+<link rel="stylesheet" href="http://www.formandocodigo.com/css/style12.min.css"/>
+<link rel="stylesheet" href="/plugin/preload/css/preloader.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" href="/plugin/whatsapp/floating-wpp.min.css?v=4">
+<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+<link rel='canonical' href='https://formandocodigo.com/' />
+<meta property='og:type' content='website' />
+<meta property='og:locale' content='es_ES' />
+<meta property='og:locale:alternate' content='fr_FR' />
+<meta property='og:locale:alternate' content='it_IT' />
+<meta name="author" content="formandocodigo.com"/>
+<meta name="robots" content="all, index, follow"/>
+<meta name="subject" content="Aprende programando con nuestros cursos prácticos"/>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@formandocodigo" />
+<meta name="twitter:creator" content="@formandocodigo" />
+<meta name="twitter:url" content="https://twitter.com/formandocodigo"/>
+<meta property='article:author' content='https://www.facebook.com/FormandoCodigo' />
+<meta property='article:publisher' content='https://www.facebook.com/FormandoCodigo' />
+<meta property="fb:app_id" content="968423973206792"/>
+<meta name="google-site-verification" content="sQMVDrOfy_j-NXCXhR1JRZDrig8jFVTmNBdXn7EsRj8" />
+<style>
+    .savemoney{
+        
+        opacity: 0.7;
+        text-decoration: line-through;
+    }
+</style>
+
+  <link rel="stylesheet" href="https://admin.formandocodigo.com/public/admin/robust-assets/css/plugins/editors/quill/monokai-sublime.min.css">
+  <link rel="stylesheet" type="text/css" href="/frontend/css/custom/quill.snow.custom.css">
+</head>
+<body>
+  <main>
+    <!--MENU-->
+<div class="navbar " role="navigation" id="miNav">
+  <div class="container">
+    <!-- for full width layout or use class="container" for boxed layout -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MegaNavbar">
+        <span class="sr-only">Expandir menu</span>
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand-white img-logo" href="/" class="brand-logo"><img src="http://www.formandocodigo.com/img/formando-codigo-bn.svg" style="width: 210px;" alt="Formando Código"/></a>
+      <a class="navbar-brand brand-color img-logo hidden" href="/" class="brand-logo"><img src="http://www.formandocodigo.com/img/formando-codigo.svg" style="width: 210px;" alt="Formando Código"/></a>
+      <a href="#" data-activates="slide-out" class="button-collapse waves-effect waves-light btn-menu-responsive"><i class="flaticon-menu-1"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="MegaNavbar">
+      <ul class="nav navbar-nav navbar-left">
+        <!-- Left side navigation-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- Right side navigation-->
+        <!-- account -->
+        <a href="/cursos" class="navbar-link navbar-left hidden-md hidden-sm"><span class="">Cursos <span style="color:red;"><i class="fa fa-percent"></i></span></span></a>
+                <a href="/suscripcion/planes" class="navbar-link navbar-left"><span class="">Suscripción <span style="color:red;"><i class="fa fa-percent"></i></span></span> </a>
+                <a href="/gratis" class="navbar-link navbar-left hidden-md hidden-sm"><span class="">Gratis</span></a>
+        <li class="dropdown-recursos">
+          <a data-toggle="dropdown" href="javascript:;" id="dropdownMenu3" class="dropdown-toggle hidden-lg" aria-expanded="true"><i class="flaticon-info"></i>&nbsp;<span> Contenidos </span><span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+            <li><a href="/cursos">Cursos</a></li>
+            <li><a href="/tutoriales">Tutoriales y videos gratuitos</a></li>
+            <li><a href="/blog">Blog y novedades</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-soporte">
+          <a data-toggle="dropdown" href="javascript:;" id="dropdownMenu1" class="dropdown-toggle hidden-sm" aria-expanded="true"><i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;<span> Más </span><span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="/suscripcion/formasdepago">Formas de pago</a></li>
+            <li><a href="/faq">Preguntas frecuentes</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/deseos">Deseos</a></li>
+            
+          </ul>
+        </li>
+                <li class="divider"></li>
+        <a href="/ingresar-a-formando-codigo" class="navbar-link navbar-left"><span class="hidden-sm hidden-md">Iniciar sesión</span><span class="hidden-lg">Login</span></a>
+        <a href="/registrarme-en-formando-codigo" class="navbar-link hidden-sm link-call navbar-left"><span>Registrarme</span></a>
+              </ul>
+    </div>
+  </div>
+</div>
+<ul id="slide-out" class="side-nav collapsible collapsible-accordion">
+    <li><a class="waves-effect bold" href="/ingresar-a-formando-codigo">Iniciar Sesión</a></li>
+  <li><a class="waves-effect bold" href="/registrarme-en-formando-codigo">Registrate</a></li>
+            <li><a href="/suscripcion/planes">Precios</a></li>
+          <li><a class="waves-effect" href="/cursos">Cursos</a></li>
+  <li><a class="waves-effect" href="/tutoriales">Tutoriales</a></li>
+  <li><a class="waves-effect" href="/blog">Blog</a></li>
+  <li>
+    <a class="collapsible-header waves-effect waves-light">Más <i class="flecha-right fa fa-caret-down"></i></a>
+    <div class="collapsible-body">
+      <ul>
+        <li><a class="waves-effect" href="/suscripcion/formasdepago">Formas de pago</a></li>
+        <li><a class="waves-effect" href="/faq">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+  </li>
+  </ul>
+<!--MENU-->
+
+  
+    <div class="container-fluid">
+    <div class="row">
+        <div id="test1" class="col s12 no-padding">
+            <nav class="grey lighten-3 black-text hide-on-small-only" style="margin-top: 62px;">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <div class="col s12">
+                            <a href="#!" class="breadcrumb">Cursania</a>
+                            <a href="#!" class="breadcrumb">Blog</a>
+                            <a href="#!" class="breadcrumb">¿Por qué aprender Desarrollo de Aplicaciones Móviles?</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="cursoItem curso-mod-400">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l8 s12 m7">
+                            <div class="seccion1">
+                                <div class="titulo" style="text-align: left;">
+                                    <h2>¿Por qué aprender Desarrollo de Aplicaciones Móviles?</h2>
+                                    <p class="truncate">Porque desarrollar aplicaciones para android</p>
+                                </div>
+                                <div class="video-container">
+                                    <img class="responsive-img" src="https://admin.formandocodigo.com/imagenes/blog/portadas/cover-post-por-que-aprender-desarrollo-de-aplicaciones-moviles-full.jpg" alt="¿Por qué aprender Desarrollo de Aplicaciones Móviles?">
+                                </div>
+                                <div class="ql-snow">
+                                    <div class="ql-editor">
+                                        <p><span style="color: rgb(0, 0, 0); background-color: transparent;">Si dijéramos que debemos aprender a programar Android o IOS por la gran cantidad de audiencia que tiene. No estaríamos viendo todo el panorama. En el siguiente artículo explicaremos por qué es importante su estudio.</span></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Un hecho a menudo es cuando se nos olvida nuestro smartphone en la casa y regresamos para recogerlo. De acuerdo con un artículo de la revista Forbes la </span><a href="https://www.forbes.com.mx/la-nomofobia-la-adiccion-a-nuestros-celulares/" target="_blank" style="color: rgb(17, 85, 204); background-color: transparent;">Nomofobia</a><span style="color: rgb(0, 0, 0); background-color: transparent;"> es un caso extremo donde el individuo que la padece tiene un miedo irracional de salir de casa sin ningún dispositivo móvil. Esto solo nos demuestra que un hecho particular que nos sucede habitualmente nos puede originar un trastorno. No ahondaremos acerca de esta patología; pero sí veremos la implicancia que esto conlleva.</span></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Si bien un teléfono móvil ya es una extensión de nosotros mismos tanto así que se puede decir que esto nos hace seres aumentados. Sin embargo al día de hoy un Smartphone es más que un montón de circuitos integrados cargado con aplicaciones que nos hace la vida mejor.</span></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Es el medio por el cual nos relacionamos, interactuamos y visualizamos una nueva realidad que está creciendo a un ritmo exorbitante. Tanto que ni la imaginación nos basta para comprenderlo. </span></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Solo pensar que en este año (2018) más del 75% de la población mundial tiene un teléfono inteligente es una prueba de ello. El simple hecho de la distribución a todo el globo ya es un hito histórico. Lograr tal hazaña no lo hemos realizado en los 50 mil años como especie sobre la tierra y pensar que solo bastó 60 años para realizar tal proeza.</span></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Para que esto no quede en la especulación o en una opinión miremos algunas estadísticas. La organización </span><a href="https://wearesocial.com/" target="_blank" style="color: rgb(17, 85, 204); background-color: transparent;">We Are Social</a><span style="color: rgb(0, 0, 0); background-color: transparent;"> en conjunto con el </span><a href="https://hootsuite.com/es/" target="_blank" style="color: rgb(17, 85, 204); background-color: transparent;">Hootsuite</a><span style="color: rgb(0, 0, 0); background-color: transparent;"> lanzan un </span><a href="https://wearesocial.com/blog/2018/01/global-digital-report-2018" target="_blank" style="color: rgb(17, 85, 204); background-color: transparent;">reporte anual</a><span style="color: rgb(0, 0, 0); background-color: transparent;"> del crecimiento de la red, entre otras cosas más.</span></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Si miramos cual es el medio preferido de las personas al momento de conectarse o hacer una consulta, vemos que ahora el 52% del tráfico proviene de un Mobile y esto sigue en aumento.</span></p><p><br></p><p><img src="https://admin.formandocodigo.com/imagenes/blog/imagenes/cursania-imagen-05082018014814.png"></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Esto es un claro ejemplo del impacto de los móviles en nuestra vida cotidiana. Pero también queda en evidencia que gran parte de nuestro tiempo se lo dedicamos a las redes sociales.</span></p><p><br></p><p><img src="https://admin.formandocodigo.com/imagenes/blog/imagenes/cursania-imagen-05082018014850.png"></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Por lo que tener una buena presencia en estos medios lograremos un significativo tráfico en lo cual puede convertirse en futuras conversiones de nuestros usuarios.</span></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Pero, no nos apartemos del tema. Recuerdan el título de esta entrada ¿Por qué aprender a programar en móviles? Antes de responder esta cuestión, quisiéramos decir que no solo es programar, sino también aprender a  Prototipar para Móviles, Responsive Design, Web Designer, Creación de Contenido (para formatos pequeños), Marketing para Móviles, etc…</span></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">El punto es que consideres estos pequeños aparatos que cambiaron nuestra forma de vivir a la hora de creación o ideación de cualquier proyecto que tengas a futuro. Y si ya cuentas con algunos como podrias de darle un soporte adecuado. Y si esto no te es suficiente que tal la idea de crear tu app que gestione la vigilancia de un departamento, casa o barrio ya sea desde el lugar que estés viviendo.</span></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Ya que con la llegada de IoT (Internet of Things traducido Internet de las cosas) ahora hay más dispositivos conectados a una red sea local o un servidor. </span><a href="https://www.gartner.com/en" target="_blank" style="color: rgb(17, 85, 204); background-color: transparent;">Gartner</a><span style="color: rgb(0, 0, 0); background-color: transparent;"> una empresa de investigación en cuanto a tecnologías de la información </span><a href="https://www.gartner.com/newsroom/id/3598917" target="_blank" style="color: rgb(17, 85, 204); background-color: transparent;">predice que para el 2020 se tendrá 20 mil millones de dispositivos conectados</a><span style="color: rgb(0, 0, 0); background-color: transparent;">. Si solo miramos las cifras de este año con respecto del año anterior (2018: 11 mil millones, 2017 8 mil millones de dispositivos) vemos un crecimiento exponencial.</span></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Enfocados en nuestro asunto vemos que cada vez más existen herramientas que gestionan cada actividad que realizamos y esto se debe como resultado del empuje tecnológico. </span></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">No muy lejos de nuestros días comparemos algunos hechos habituales. Al día de hoy mandamos un video a un TV a través de una señal de WiFi. Existen apps que administran las cámaras. </span><a href="http://skyalert.mx/app/" target="_blank" style="color: rgb(17, 85, 204); background-color: transparent;">Inclusive software que anticipa sismos</a><span style="color: rgb(0, 0, 0); background-color: transparent;"> y todo esto al alcance de nuestras manos.</span></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Lo importante es que tengamos una base aún si es mínima, para así poder manipular y transformar la gran gama de dispositivos para el beneficio de la sociedad.</span></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Una vez descrito todo esto sabemos que es de suma importancia esta cultura. Por lo que ahora estamos renovando nuestro curso de Android Básico, pero bajo el nombre de Introducción a Android además de ello también estaremos creando nuevos cursos y más blogs acerca de los cambios que se está llevando en el mundo de la tecnología. </span></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Si estás viendo esta entrado después de que hayas tomado el curso o si lo estas tomando y si no fuera ninguno de los casos déjanos un comentario con tu apreciación y si tienes alguna sugerencia no dudes en contactarnos.</span></p><p><br></p><p><br></p>
+                                    </div>
+                                </div>
+                                <hr>
+                            <div class="row" id="comentarios">
+                              <div class="col l6 m6 hide-on-med-and-down">
+                                  <br>
+                                  <a class="waves-effect waves-light btn light-blue darken-2 botom-precio modal-trigger" data-modal="true" data-href="http://www.formandocodigo.com/comentario/formulario/post/4/por-que-aprender-desarrollo-de-aplicaciones-moviles" href="#mainModal">Comentar <i class="mdi-action-question-answer right"></i></a>
+                              </div>
+                              <div class="col l6 m6 hide-on-med-and-down right-align" style="position: relative; margin-top: 12px;">
+                                  <span class="compartir">Compartir:</span>
+                                  <ul class="social">
+                                      <li><a href="" class="ease-all twitter"><i class="mdi mdi-twitter"></i></a></li>
+                                      <li><a href="" class="ease-all facebook"><i class="mdi mdi-facebook"></i></a></li>
+                                      <li><a href="" class="ease-all youtube"><i class="mdi mdi-google-plus"></i></a></li>
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="comentarios p-15">
+                          <div class="card-panel">
+      <div class="items center">
+          <h3>0 Comentarios</h3>
+          <p>Este curso no cuenta con comentarios aún, puedes ser el primero en dejar tu apreción, duda o consulta.</p>
+          <a class="waves-effect waves-light btn  light-blue darken-2 modal-trigger" id="btn_comentario" data-modal="true" data-href="http://www.formandocodigo.com/comentario/formulario/post/4/por-que-aprender-desarrollo-de-aplicaciones-moviles" href="#mainModal"><i class="mdi-action-question-answer right"></i>Comentar ahora</a>
+      </div>
+    </div>
+        
+
+
+                        </div>
+                    </div>
+                    <div class="col l4 s12 m5">
+                        <div class="seccion2">
+                                <ul class="categoria col l12 s12 m12">
+                                    <li>
+                                        <i class="flaticon-diamond icono"></i>
+                                        <span class="letra">Fecha </span>
+                                        <a href="">05/08</a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-diamond icono"></i>
+                                        <span class="letra">Categoría </span>
+                                        <a href="">Programación</a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-diamond icono"></i>
+                                        <span class="letra">Autor </span>
+                                        <a href="">Formando</a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-diamond icono"></i>
+                                        <span class="letra">Comentarios </span>
+                                        <a href=""> 21</a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-diamond icono"></i>
+                                        <span class="letra">Recursos</span>
+                                        <a href="">2</a>
+                                    </li>
+                                </ul>
+                                <div class="tutor col l12 s12 m12" style="margin-top: 15px">
+                                  <div class="titulo-border">
+                                    <h3>Tutor</h3>
+                                  </div>
+                                  <div class="row" style="margin-bottom: 0px">
+                                    <div class="col l4 m4 s4">
+                                      <img src="https://admin.formandocodigo.com/imagenes/profesor/foto/foto-profesor-04052018004946-formando-codigo-100.jpg" class="circle responsive-img" alt="Tutor" style="min-width: 100%">
+                                    </div>
+                                    <div class="col l8 m8 s8">
+                                      <h5>Formando Código</h5>
+                                      <span>Ingeniero de Sistemas</span>
+                                      <!--<a class="waves-effect waves-light btn btn-transparente">Contactar <i class="fa fa-envelope"></i></a>-->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="relacionados col l12 s12">
+                                    <div class="titulo-border">
+                                        <h3>Post Relacionados</h3>
+                                    </div>
+                                                                        
+                                    <div class="calificacion">
+                                        <div class="titulo-border">
+                                            <h3>Calificación</h3>
+                                        </div>
+                                        <div class="puntaje">
+                                            <h3 class="puntaje-numero">4.5</h3>
+                                            <div class="puntaje-estrellitas">
+                                              <i class="mdi-star mdi" aria-hidden="true"></i>
+                                              <i class="mdi-star mdi" aria-hidden="true"></i>
+                                              <i class="mdi-star mdi" aria-hidden="true"></i>
+                                              <i class="mdi-star mdi" aria-hidden="true"></i>
+                                              <i class="mdi-star-outline mdi" aria-hidden="true"></i>
+                                                <span>5 Comentarios</span>
+                                            </div>
+                                        </div>
+                                        <a class="waves-effect waves-light light-blue darken-2 btn botom-precio" href="#"><i class="mdi-action-question-answer right"></i>Comentar ahora</a>
+                                    </div>
+                                </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+</div>
+</div>
+   <div class="floating-wpp"></div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col l3 s12 m6 center" id="Table_of_Contents">
+                <div class="block-title">
+                    Formando Código
+                </div>
+                <p class="black-text text-lighten-4" style="font-size: 13px;line-height: 20px;">Es una página pensada en todas aquellas personas autodidactas que quieren aprender o aumentar sus conocimientos en las distintas tecnologías de programación escritorio, Web y Móvil.</p>
+                <div
+                class="fb-like"
+                data-share="true"
+                data-width="200"
+                data-show-faces="true">
+            </div>
+            <br><br>
+        </div>
+        <div class="col l3 s12 m6 center">
+            <div class="block-title">
+                PÁGINAS ÚTILES
+            </div>
+            <ul class="enlaces">
+                <li><a href="/terminos-y-condiciones">TERMINOS Y CONDICIONES</a></li>
+                <li><a href="/deseos">DESEOS</a></li>
+                <li><a href="/suscripcion/formasdepago">FORMAS DE PAGO</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <!--<li><a class="" href="http://www.formandocodigo.com/contacto">CONTACTO</a></li>-->
+            </ul>
+        </div>
+        <div class="col l3 s12 m6 center">
+            <div class="block-title">
+                Datos de Contacto
+            </div>
+            <div class="block-content">
+               <div class="contact-item" style="margin-top: -2px; box-shadow:none!important; background:none;"><img src="/img/iconos/email.svg" alt="correo formando código"><a href="mailto:info@formandocodigo.com" class="text-contact-item">info@formandocodigo.com</a></div>
+               <div class="contact-item" style="box-shadow:none!important; background:none;"><img src="/img/iconos/phone-call.svg" alt="correo formando código"><a href="tel:+51964078717" class="text-contact-item">(+51) 964 078 717</a></div>
+           </div>
+           <ul class="redes-sociales" style="margin-top: -15px;">
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Facebook" id="facebook" href="https://www.facebook.com/FormandoCodigo" target="_blank"></a></li>
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Twitter" id="twitter" href="https://twitter.com/formandocodigo" target="_blank"></a></li>
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Google-plus" id="google-plus" href="https://plus.google.com/108666760835668268134" target="_blank"></a></li>
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Youtube" id="youtube" href="http://youtube.com/FormandoCodigo" target="_blank"></a></li>
+        </ul>
+    </div>
+    <div class="col l3 s12 m6 center">
+        <div class="block-title">
+            Formas de Pago
+        </div>
+        <div class="pagos-iconos" style="margin-top: 14px;">
+            <img src="/img/formas-de-pago.svg" alt="Formas de pago FormandoCodigo">
+        </div>
+    </div>
+</div>
+</div>
+<div class="barra-footer">
+    <div class="container">
+        <div class="col m12 l12">
+            <div class="row">
+                <div class="col l6 s12 text-left">
+                    <h6 class="dacdevs"><a href="http://facebook.com/dacdevs"><img src="/img/iconos/dacdevs.svg" alt="Dac Developers" class="img-dacdevs"><span>Dac Developers - Desarrollo web</span></a></h6>
+                </div>
+                <div class="col l6 s12 text-right">
+                    <h6 class="copy">2015 - 2020 | <strong>©FormandoCódigo</strong> <span class="derechos">Todos los derechos reservados</span></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mregister" class="modal">
+    <div class="modal-content">
+      <div class="contenido">
+        <div class="row">
+        <div class="col l4 s12 m6">
+           <div class="row">
+              <div class="s12 center input-field">
+                  <span class="social-grey-text">
+                      Crea tu cuenta con: 
+                  </span>
+              </div>
+              <div class="col s12 input-field center">
+                  <a href="/facebook/authorize" class="waves-effect btn-social waves-light btn blue darken-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook">
+                      <i class="fa fa-facebook">
+                      </i>
+                  </a>
+                <br>
+                  
+                  <a href="/google/authorize" class="waves-effect btn-social red darken-4 waves-light btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Google+">
+                      <i class="fa fa-google-plus">
+                      </i>
+                  </a>
+              </div>
+          </div>
+        </div>
+        <div class="col l8 s12 m6">
+          <div class="row">
+            <div class="s12 center input-field">
+              <span class="social-grey-text">
+                  O registrate con tu email
+              </span>
+            </div>
+          </div>
+          <div class="row">
+              <form class="col s12" role="form" method="POST" data-ng-submit="enviarRegistro()">
+                  <input type="hidden" name="_token" value="Sw8q8egdbk21suw1cEIXEponYcapZ0ZiGM6i2OHH">
+                  <div class="row">
+                      <div class="input-field col s12 m12 l6 ">
+                          <input data-ng-model="registro.nombre" id="name" required min="3" title="Ingrese su Nombre" name="name" type="text" value="" class="validate "/>
+                          <label for="name">
+                              Nombres
+                          </label>
+                          <span class="help-block" data-ng-if="errores.nombre.length">
+                              <strong><% errores.nombre[0] %></strong>
+                          </span>
+                      </div>
+                      <div class="input-field col s12 m12 l6">
+                          <input id="emailregistro" data-ng-model="registro.email" type="email" required title="Ingrese su dirección de correo electronico" name="email" class="validate " value=""/>
+                          <label for="emailregistro">
+                              Email
+                          </label>
+                          <span class="help-block" data-ng-if="errores.email.length">
+                              <strong><% errores.email[0] %></strong>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s12 m12 l6">
+                          <input data-ng-model="registro.password" id="passwordregistro" min="6" maxlength="30" required title="Ingrese una contraseña segura" type="password" name="password" class="validate "/>
+                          <label for="passwordregistro">
+                              Contraseña
+                          </label>
+                          <span class="help-block" data-ng-if="errores.password.length">
+                              <strong><% errores.password[0] %></strong>
+                          </span>
+                      </div>
+                      <div class="input-field col s12 m12 l6">
+                          <input data-ng-model="registro.password_confirmation" id="password_confirmation" required title="Ingrese su contraseña nuevamente" name="password_confirmation" type="password" class="validate "/>
+                          <label for="password_confirmation">
+                              Repetir contraseña
+                          </label>
+                          <span class="help-block" data-ng-if="errores.password_confirmation.length">
+                              <strong><% errores.password_confirmation[0] %></strong>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col s12 input-field left">
+                          <input ng-model="teracepto" type="checkbox" class="blue" id="test5" />
+                          <label for="test5">
+                              He leído y acepto los <a class="/terminos-y-condiciones">términos y condiciones</a> de Formando Código.
+                          </label>
+                      </div>
+                      <div class="col s12 input-field center">
+                          <br>
+                          <br>
+                      </div>
+                      <div class="col s12 input-field center">
+                          <button type="submit" data-gn-model="button" ng-disabled="enviabtn" class="btn waves-effect waves-light light-blue">
+                              <i data-ng-show="!enviando" class="fa fa-send right">
+                              </i>
+                              <i data-ng-show="enviando" class="fa fa-circle-o-notch fa-spin"></i>
+                              REGISTRARME
+                          </button>
+                      </div>
+                      <div class="col s12 input-field center">
+                          <a href="/ingresar-a-formando-codigo">
+                              ¿Ya estás registrado? Entrar!
+                          </a>
+                      </div>
+                  </div>
+              </form>
+          </div>
+        </div>
+        </div>
+        
+           
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar ventana</a>
+    </div>
+  </div></footer>
+</main>
+<!--  Scripts-->
+<script src="http://www.formandocodigo.com/js/modernizr.custom.js "></script>
+<script src="http://www.formandocodigo.com/js/snap.svg-min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+<script src="/MegaNavbar/assets/plugins/bootstrap-rtl/js/bootstrap-arabic.min.js"></script>
+<script>
+    var navHeight = -1;
+  </script>
+<script src="http://www.formandocodigo.com/js/materialize.min.js "></script>
+<script src="http://www.formandocodigo.com/js/classie.js "></script>
+<!--<script src="http://www.formandocodigo.com/js/demo12.js "></script>-->
+<script src="http://www.formandocodigo.com/js/init.js "></script>
+<script src="http://www.formandocodigo.com/js/nprogress.js "></script>
+<script src="http://www.formandocodigo.com/js/jquery.pjax.js "></script>
+<script src="http://www.formandocodigo.com/js/owl.carousel.js "></script>
+<script src="http://www.formandocodigo.com/js/code.js "></script>
+<script src="https://cdn.jsdelivr.net/sharer.js/latest/sharer.min.js"></script>
+<script src="http://www.formandocodigo.com/js/angular.min.js"></script>
+<script src="http://www.formandocodigo.com/js/moment-with-locales.js"></script>
+<script src="http://www.formandocodigo.com/js/angular-moment.min.js"></script>
+<script src="http://www.formandocodigo.com/js/controladores/app.js"></script>
+<script src="http://www.formandocodigo.com/js/controladores/fcoutController.js"></script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '968423973206792',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "//connect.facebook.net/en_US/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));
+</script>
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98754073-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-98754073-1');
+</script>
+
+<script>
+        $(document).ready(function(){
+        $('.ql-editor img').materialbox();
+    });
+</script>
+</body>
+</html>

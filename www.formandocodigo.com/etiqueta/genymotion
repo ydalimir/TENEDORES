@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Etiqueta | Formando Código</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS  -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="http://www.formandocodigo.com/css/materialize.min.css?v=1.1" type="text/css" rel="stylesheet" media="screen"/>
+<link href="/MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css?v=1.1" rel="stylesheet">
+    <!-- Font Awesome -->
+<link href="/MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!-- Simple Line Icons -->
+<link href="/MegaNavbar/assets/plugins/simple-line-icons/simple-line-icons.css" rel="stylesheet">
+<!-- MegaNavbar-->
+<link rel="stylesheet" type="text/css" href="/MegaNavbar/assets/css/MegaNavbar.min.css?v=1.2">
+<link rel="stylesheet" type="text/css" href="/MegaNavbar/assets/css/skins/navbar-inverse.css?v=1.1">
+<link rel="stylesheet" type="text/css" href="/MegaNavbar/assets/css/animation/animation.css">
+<link href="http://www.formandocodigo.com/css/style.css?v=1.1" type="text/css" rel="stylesheet" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<!--Icono-->
+<link rel="stylesheet" href="/iconos/celeste/font/flaticon.css" rel="stylesheet">
+<link href="http://www.formandocodigo.com/css/owl.carousel.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/estilo.css?v=1.6"/>
+<link rel="stylesheet" href="http://www.formandocodigo.com/css/nprogress.css"/>
+<link rel="stylesheet" href="http://www.formandocodigo.com/css/hover.css"/>
+<link rel="stylesheet" href="http://www.formandocodigo.com/css/style12.min.css"/>
+<link rel="stylesheet" href="/plugin/preload/css/preloader.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" href="/plugin/whatsapp/floating-wpp.min.css?v=4">
+<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+<link rel='canonical' href='https://formandocodigo.com/' />
+<meta property='og:type' content='website' />
+<meta property='og:locale' content='es_ES' />
+<meta property='og:locale:alternate' content='fr_FR' />
+<meta property='og:locale:alternate' content='it_IT' />
+<meta name="author" content="formandocodigo.com"/>
+<meta name="robots" content="all, index, follow"/>
+<meta name="subject" content="Aprende programando con nuestros cursos prácticos"/>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@formandocodigo" />
+<meta name="twitter:creator" content="@formandocodigo" />
+<meta name="twitter:url" content="https://twitter.com/formandocodigo"/>
+<meta property='article:author' content='https://www.facebook.com/FormandoCodigo' />
+<meta property='article:publisher' content='https://www.facebook.com/FormandoCodigo' />
+<meta property="fb:app_id" content="968423973206792"/>
+<meta name="google-site-verification" content="sQMVDrOfy_j-NXCXhR1JRZDrig8jFVTmNBdXn7EsRj8" />
+<style>
+    .savemoney{
+        
+        opacity: 0.7;
+        text-decoration: line-through;
+    }
+</style>
+</head>
+<body>
+<main>
+    <!--MENU-->
+<div class="navbar " role="navigation" id="miNav">
+  <div class="container">
+    <!-- for full width layout or use class="container" for boxed layout -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MegaNavbar">
+        <span class="sr-only">Expandir menu</span>
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand-white img-logo" href="/" class="brand-logo"><img src="http://www.formandocodigo.com/img/formando-codigo-bn.svg" style="width: 210px;" alt="Formando Código"/></a>
+      <a class="navbar-brand brand-color img-logo hidden" href="/" class="brand-logo"><img src="http://www.formandocodigo.com/img/formando-codigo.svg" style="width: 210px;" alt="Formando Código"/></a>
+      <a href="#" data-activates="slide-out" class="button-collapse waves-effect waves-light btn-menu-responsive"><i class="flaticon-menu-1"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="MegaNavbar">
+      <ul class="nav navbar-nav navbar-left">
+        <!-- Left side navigation-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- Right side navigation-->
+        <!-- account -->
+        <a href="/cursos" class="navbar-link navbar-left hidden-md hidden-sm"><span class="">Cursos <span style="color:red;"><i class="fa fa-percent"></i></span></span></a>
+                <a href="/suscripcion/planes" class="navbar-link navbar-left"><span class="">Suscripción <span style="color:red;"><i class="fa fa-percent"></i></span></span> </a>
+                <a href="/gratis" class="navbar-link navbar-left hidden-md hidden-sm"><span class="">Gratis</span></a>
+        <li class="dropdown-recursos">
+          <a data-toggle="dropdown" href="javascript:;" id="dropdownMenu3" class="dropdown-toggle hidden-lg" aria-expanded="true"><i class="flaticon-info"></i>&nbsp;<span> Contenidos </span><span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+            <li><a href="/cursos">Cursos</a></li>
+            <li><a href="/tutoriales">Tutoriales y videos gratuitos</a></li>
+            <li><a href="/blog">Blog y novedades</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-soporte">
+          <a data-toggle="dropdown" href="javascript:;" id="dropdownMenu1" class="dropdown-toggle hidden-sm" aria-expanded="true"><i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;<span> Más </span><span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="/suscripcion/formasdepago">Formas de pago</a></li>
+            <li><a href="/faq">Preguntas frecuentes</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/deseos">Deseos</a></li>
+            
+          </ul>
+        </li>
+                <li class="divider"></li>
+        <a href="/ingresar-a-formando-codigo" class="navbar-link navbar-left"><span class="hidden-sm hidden-md">Iniciar sesión</span><span class="hidden-lg">Login</span></a>
+        <a href="/registrarme-en-formando-codigo" class="navbar-link hidden-sm link-call navbar-left"><span>Registrarme</span></a>
+              </ul>
+    </div>
+  </div>
+</div>
+<ul id="slide-out" class="side-nav collapsible collapsible-accordion">
+    <li><a class="waves-effect bold" href="/ingresar-a-formando-codigo">Iniciar Sesión</a></li>
+  <li><a class="waves-effect bold" href="/registrarme-en-formando-codigo">Registrate</a></li>
+            <li><a href="/suscripcion/planes">Precios</a></li>
+          <li><a class="waves-effect" href="/cursos">Cursos</a></li>
+  <li><a class="waves-effect" href="/tutoriales">Tutoriales</a></li>
+  <li><a class="waves-effect" href="/blog">Blog</a></li>
+  <li>
+    <a class="collapsible-header waves-effect waves-light">Más <i class="flecha-right fa fa-caret-down"></i></a>
+    <div class="collapsible-body">
+      <ul>
+        <li><a class="waves-effect" href="/suscripcion/formasdepago">Formas de pago</a></li>
+        <li><a class="waves-effect" href="/faq">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+  </li>
+  </ul>
+<!--MENU-->
+
+    <section class="curso-banner bn-fc-sha banner-fc banner-fc-blue z-depth-2">
+        <div class="container">
+            <div class="col l12 center">
+                <h1 class="titulo-banner">CURSOS CON LA ETIQUETA</h1>
+                <p class="subtitulo-banner">genymotion</p>
+            </div>
+        </div>
+    </section>
+    <section class="tutoriales">
+        <div class="container">
+            <div class="row">
+                <div class="col l9">
+                                                            <div class="col l12 m12 s12 center">
+                        <ul class="pagination">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="floating-wpp"></div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col l3 s12 m6 center" id="Table_of_Contents">
+                <div class="block-title">
+                    Formando Código
+                </div>
+                <p class="black-text text-lighten-4" style="font-size: 13px;line-height: 20px;">Es una página pensada en todas aquellas personas autodidactas que quieren aprender o aumentar sus conocimientos en las distintas tecnologías de programación escritorio, Web y Móvil.</p>
+                <div
+                class="fb-like"
+                data-share="true"
+                data-width="200"
+                data-show-faces="true">
+            </div>
+            <br><br>
+        </div>
+        <div class="col l3 s12 m6 center">
+            <div class="block-title">
+                PÁGINAS ÚTILES
+            </div>
+            <ul class="enlaces">
+                <li><a href="/terminos-y-condiciones">TERMINOS Y CONDICIONES</a></li>
+                <li><a href="/deseos">DESEOS</a></li>
+                <li><a href="/suscripcion/formasdepago">FORMAS DE PAGO</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <!--<li><a class="" href="http://www.formandocodigo.com/contacto">CONTACTO</a></li>-->
+            </ul>
+        </div>
+        <div class="col l3 s12 m6 center">
+            <div class="block-title">
+                Datos de Contacto
+            </div>
+            <div class="block-content">
+               <div class="contact-item" style="margin-top: -2px; box-shadow:none!important; background:none;"><img src="/img/iconos/email.svg" alt="correo formando código"><a href="mailto:info@formandocodigo.com" class="text-contact-item">info@formandocodigo.com</a></div>
+               <div class="contact-item" style="box-shadow:none!important; background:none;"><img src="/img/iconos/phone-call.svg" alt="correo formando código"><a href="tel:+51964078717" class="text-contact-item">(+51) 964 078 717</a></div>
+           </div>
+           <ul class="redes-sociales" style="margin-top: -15px;">
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Facebook" id="facebook" href="https://www.facebook.com/FormandoCodigo" target="_blank"></a></li>
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Twitter" id="twitter" href="https://twitter.com/formandocodigo" target="_blank"></a></li>
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Google-plus" id="google-plus" href="https://plus.google.com/108666760835668268134" target="_blank"></a></li>
+            <li><a class="black-text tooltipped" data-delay="50" data-tooltip="Youtube" id="youtube" href="http://youtube.com/FormandoCodigo" target="_blank"></a></li>
+        </ul>
+    </div>
+    <div class="col l3 s12 m6 center">
+        <div class="block-title">
+            Formas de Pago
+        </div>
+        <div class="pagos-iconos" style="margin-top: 14px;">
+            <img src="/img/formas-de-pago.svg" alt="Formas de pago FormandoCodigo">
+        </div>
+    </div>
+</div>
+</div>
+<div class="barra-footer">
+    <div class="container">
+        <div class="col m12 l12">
+            <div class="row">
+                <div class="col l6 s12 text-left">
+                    <h6 class="dacdevs"><a href="http://facebook.com/dacdevs"><img src="/img/iconos/dacdevs.svg" alt="Dac Developers" class="img-dacdevs"><span>Dac Developers - Desarrollo web</span></a></h6>
+                </div>
+                <div class="col l6 s12 text-right">
+                    <h6 class="copy">2015 - 2020 | <strong>©FormandoCódigo</strong> <span class="derechos">Todos los derechos reservados</span></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mregister" class="modal">
+    <div class="modal-content">
+      <div class="contenido">
+        <div class="row">
+        <div class="col l4 s12 m6">
+           <div class="row">
+              <div class="s12 center input-field">
+                  <span class="social-grey-text">
+                      Crea tu cuenta con: 
+                  </span>
+              </div>
+              <div class="col s12 input-field center">
+                  <a href="/facebook/authorize" class="waves-effect btn-social waves-light btn blue darken-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook">
+                      <i class="fa fa-facebook">
+                      </i>
+                  </a>
+                <br>
+                  
+                  <a href="/google/authorize" class="waves-effect btn-social red darken-4 waves-light btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Google+">
+                      <i class="fa fa-google-plus">
+                      </i>
+                  </a>
+              </div>
+          </div>
+        </div>
+        <div class="col l8 s12 m6">
+          <div class="row">
+            <div class="s12 center input-field">
+              <span class="social-grey-text">
+                  O registrate con tu email
+              </span>
+            </div>
+          </div>
+          <div class="row">
+              <form class="col s12" role="form" method="POST" data-ng-submit="enviarRegistro()">
+                  <input type="hidden" name="_token" value="Sw8q8egdbk21suw1cEIXEponYcapZ0ZiGM6i2OHH">
+                  <div class="row">
+                      <div class="input-field col s12 m12 l6 ">
+                          <input data-ng-model="registro.nombre" id="name" required min="3" title="Ingrese su Nombre" name="name" type="text" value="" class="validate "/>
+                          <label for="name">
+                              Nombres
+                          </label>
+                          <span class="help-block" data-ng-if="errores.nombre.length">
+                              <strong><% errores.nombre[0] %></strong>
+                          </span>
+                      </div>
+                      <div class="input-field col s12 m12 l6">
+                          <input id="emailregistro" data-ng-model="registro.email" type="email" required title="Ingrese su dirección de correo electronico" name="email" class="validate " value=""/>
+                          <label for="emailregistro">
+                              Email
+                          </label>
+                          <span class="help-block" data-ng-if="errores.email.length">
+                              <strong><% errores.email[0] %></strong>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s12 m12 l6">
+                          <input data-ng-model="registro.password" id="passwordregistro" min="6" maxlength="30" required title="Ingrese una contraseña segura" type="password" name="password" class="validate "/>
+                          <label for="passwordregistro">
+                              Contraseña
+                          </label>
+                          <span class="help-block" data-ng-if="errores.password.length">
+                              <strong><% errores.password[0] %></strong>
+                          </span>
+                      </div>
+                      <div class="input-field col s12 m12 l6">
+                          <input data-ng-model="registro.password_confirmation" id="password_confirmation" required title="Ingrese su contraseña nuevamente" name="password_confirmation" type="password" class="validate "/>
+                          <label for="password_confirmation">
+                              Repetir contraseña
+                          </label>
+                          <span class="help-block" data-ng-if="errores.password_confirmation.length">
+                              <strong><% errores.password_confirmation[0] %></strong>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col s12 input-field left">
+                          <input ng-model="teracepto" type="checkbox" class="blue" id="test5" />
+                          <label for="test5">
+                              He leído y acepto los <a class="/terminos-y-condiciones">términos y condiciones</a> de Formando Código.
+                          </label>
+                      </div>
+                      <div class="col s12 input-field center">
+                          <br>
+                          <br>
+                      </div>
+                      <div class="col s12 input-field center">
+                          <button type="submit" data-gn-model="button" ng-disabled="enviabtn" class="btn waves-effect waves-light light-blue">
+                              <i data-ng-show="!enviando" class="fa fa-send right">
+                              </i>
+                              <i data-ng-show="enviando" class="fa fa-circle-o-notch fa-spin"></i>
+                              REGISTRARME
+                          </button>
+                      </div>
+                      <div class="col s12 input-field center">
+                          <a href="/ingresar-a-formando-codigo">
+                              ¿Ya estás registrado? Entrar!
+                          </a>
+                      </div>
+                  </div>
+              </form>
+          </div>
+        </div>
+        </div>
+        
+           
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar ventana</a>
+    </div>
+  </div></footer>
+</main>
+<!--  Scripts-->
+<script src="http://www.formandocodigo.com/js/modernizr.custom.js "></script>
+<script src="http://www.formandocodigo.com/js/snap.svg-min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+<script src="/MegaNavbar/assets/plugins/bootstrap-rtl/js/bootstrap-arabic.min.js"></script>
+<script>
+    var navHeight = 80;
+  </script>
+<script src="http://www.formandocodigo.com/js/materialize.min.js "></script>
+<script src="http://www.formandocodigo.com/js/classie.js "></script>
+<!--<script src="http://www.formandocodigo.com/js/demo12.js "></script>-->
+<script src="http://www.formandocodigo.com/js/init.js "></script>
+<script src="http://www.formandocodigo.com/js/nprogress.js "></script>
+<script src="http://www.formandocodigo.com/js/jquery.pjax.js "></script>
+<script src="http://www.formandocodigo.com/js/owl.carousel.js "></script>
+<script src="http://www.formandocodigo.com/js/code.js "></script>
+<script src="https://cdn.jsdelivr.net/sharer.js/latest/sharer.min.js"></script>
+<script src="http://www.formandocodigo.com/js/angular.min.js"></script>
+<script src="http://www.formandocodigo.com/js/moment-with-locales.js"></script>
+<script src="http://www.formandocodigo.com/js/angular-moment.min.js"></script>
+<script src="http://www.formandocodigo.com/js/controladores/app.js"></script>
+<script src="http://www.formandocodigo.com/js/controladores/fcoutController.js"></script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '968423973206792',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "//connect.facebook.net/en_US/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+  <!-- Smartsupp Live Chat script -->
+  <script>
+  window.replainSettings = { id: '0ea435e7-1179-4c98-ba2b-7b14c71bc9dd' };
+  (function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
+  var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+  })('https://widget.replain.cc/dist/client.js');
+  </script>
+  
+      
+    
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98754073-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-98754073-1');
+</script>
+
+</body>
+</html>
