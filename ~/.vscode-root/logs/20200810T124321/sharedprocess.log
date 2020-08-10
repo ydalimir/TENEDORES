@@ -1,2 +1,8 @@
 [2020-08-10 12:43:36.367] [sharedprocess] [info] main {"machineId":"d7c3cbcf438179ef44ecf20153bcf6f2f5779ebbe28c13a14164f713851b31a7","windowId":2}
 [2020-08-10 12:44:16.529] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-08-10 15:02:01.112] [sharedprocess] [info] Installing extension: felipecaputo.git-project-manager
+[2020-08-10 15:02:06.330] [sharedprocess] [info] Downloaded extension: felipecaputo.git-project-manager /home/edgar/Proyectos/Tenedores/~/.vscode-root/CachedExtensionVSIXs/felipecaputo.git-project-manager-1.7.1
+[2020-08-10 15:02:09.030] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.felipecaputo.git-project-manager-1.7.1: felipecaputo.git-project-manager
+[2020-08-10 15:02:09.034] [sharedprocess] [info] Renamed to /root/.vscode/extensions/felipecaputo.git-project-manager-1.7.1
+[2020-08-10 15:02:09.041] [sharedprocess] [info] Installation completed. felipecaputo.git-project-manager
+[2020-08-10 15:02:09.107] [sharedprocess] [info] Extensions installed successfully: felipecaputo.git-project-manager

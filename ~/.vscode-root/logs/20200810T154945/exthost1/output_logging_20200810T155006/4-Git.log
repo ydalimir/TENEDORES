@@ -1,0 +1,17 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+Open repository: /home/edgar/Proyectos/Tenedores
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :app/screens/Account/UserGuest.js
+> git ls-files --stage -- /home/edgar/Proyectos/Tenedores/app/screens/Account/UserGuest.js
+> git cat-file -s 810427ed25d8b8add868b30094ce2b03c8c0b016
